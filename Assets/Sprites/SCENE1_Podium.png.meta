@@ -1,0 +1,455 @@
+fileFormatVersion: 2
+guid: b4e3ca25a12989646b8b838891a51ee0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1430713278659412567
+    second: SCENE1_Podium_0
+  - first:
+      213: 8564002407144987398
+    second: SCENE1_Podium_1
+  - first:
+      213: 6352081124876190624
+    second: SCENE1_Podium_2
+  - first:
+      213: -30874177016774528
+    second: SCENE1_Podium_3
+  - first:
+      213: 930864386142638782
+    second: SCENE1_Podium_4
+  - first:
+      213: -1191223846298923583
+    second: SCENE1_Podium_5
+  - first:
+      213: 6685591958668066250
+    second: SCENE1_Podium_6
+  - first:
+      213: -3843860479922245888
+    second: SCENE1_Podium_7
+  - first:
+      213: 6589368930934399364
+    second: SCENE1_Podium_8
+  - first:
+      213: 1354937844707780695
+    second: SCENE1_Podium_9
+  - first:
+      213: 6723959639838848613
+    second: SCENE1_Podium_10
+  - first:
+      213: -8401967461587677650
+    second: SCENE1_Podium_11
+  - first:
+      213: 4167570421290123510
+    second: SCENE1_Podium_12
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SCENE1_Podium_0
+      rect:
+        serializedVersion: 2
+        x: 1288
+        y: 127
+        width: 1349
+        height: 1007
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 752cded852aead310800000000000000
+      internalID: 1430713278659412567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SCENE1_Podium_1
+      rect:
+        serializedVersion: 2
+        x: 1416
+        y: 199
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60b9775b0d279d670800000000000000
+      internalID: 8564002407144987398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SCENE1_Podium_2
+      rect:
+        serializedVersion: 2
+        x: 1422
+        y: 197
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a385b8d020272850800000000000000
+      internalID: 6352081124876190624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SCENE1_Podium_3
+      rect:
+        serializedVersion: 2
+        x: 1433
+        y: 197
+        width: 18
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 080ce2e7910529ff0800000000000000
+      internalID: -30874177016774528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SCENE1_Podium_4
+      rect:
+        serializedVersion: 2
+        x: 1451
+        y: 197
+        width: 12
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb2181e2a381bec00800000000000000
+      internalID: 930864386142638782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SCENE1_Podium_5
+      rect:
+        serializedVersion: 2
+        x: 1472
+        y: 192
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1cdc061293ce77fe0800000000000000
+      internalID: -1191223846298923583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SCENE1_Podium_6
+      rect:
+        serializedVersion: 2
+        x: 1773
+        y: 159
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: acd3e91f67ef7cc50800000000000000
+      internalID: 6685591958668066250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SCENE1_Podium_7
+      rect:
+        serializedVersion: 2
+        x: 1783
+        y: 156
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00f6218524dd7aac0800000000000000
+      internalID: -3843860479922245888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SCENE1_Podium_8
+      rect:
+        serializedVersion: 2
+        x: 1886
+        y: 127
+        width: 28
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48127567124227b50800000000000000
+      internalID: 6589368930934399364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SCENE1_Podium_9
+      rect:
+        serializedVersion: 2
+        x: 2044
+        y: 145
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7586a8e7ac4bdc210800000000000000
+      internalID: 1354937844707780695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SCENE1_Podium_10
+      rect:
+        serializedVersion: 2
+        x: 2052
+        y: 145
+        width: 23
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56678a8daad405d50800000000000000
+      internalID: 6723959639838848613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SCENE1_Podium_11
+      rect:
+        serializedVersion: 2
+        x: 2110
+        y: 157
+        width: 14
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2e0da5fb17366b80800000000000000
+      internalID: -8401967461587677650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SCENE1_Podium_12
+      rect:
+        serializedVersion: 2
+        x: 2125
+        y: 157
+        width: 32
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f04c69a73f26d930800000000000000
+      internalID: 4167570421290123510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      SCENE1_Podium_0: 1430713278659412567
+      SCENE1_Podium_1: 8564002407144987398
+      SCENE1_Podium_10: 6723959639838848613
+      SCENE1_Podium_11: -8401967461587677650
+      SCENE1_Podium_12: 4167570421290123510
+      SCENE1_Podium_2: 6352081124876190624
+      SCENE1_Podium_3: -30874177016774528
+      SCENE1_Podium_4: 930864386142638782
+      SCENE1_Podium_5: -1191223846298923583
+      SCENE1_Podium_6: 6685591958668066250
+      SCENE1_Podium_7: -3843860479922245888
+      SCENE1_Podium_8: 6589368930934399364
+      SCENE1_Podium_9: 1354937844707780695
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
