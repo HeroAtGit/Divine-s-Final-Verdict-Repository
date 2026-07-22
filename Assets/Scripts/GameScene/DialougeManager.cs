@@ -1,8 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
-using Unity.VisualScripting;
 using UnityEngine;
+using Unity.VisualScripting;
 using UnityEngine.UIElements;
 
 public class DialougeManager : MonoBehaviour
@@ -28,7 +28,6 @@ public class DialougeManager : MonoBehaviour
         {
             DisplayNextSentence();
         }
-    
     }
 
     public void StartDialouge (Dialouge dialouge)
@@ -44,7 +43,6 @@ public class DialougeManager : MonoBehaviour
         foreach (string sentence in dialouge.sentences)
         {
             sentences.Enqueue(sentence);
-    
         }
 
         DisplayNextSentence();
@@ -83,12 +81,12 @@ public class DialougeManager : MonoBehaviour
             dialougeText.text += letter;
             yield return null;
         }
-    
     }
 
     public void EndDialouge()
     {
         TextBox.SetActive(false);
+        StopAllCoroutines();
         Debug.Log("End of Dialouge");
     }
 

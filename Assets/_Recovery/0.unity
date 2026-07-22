@@ -136,7 +136,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &498367801
 RectTransform:
   m_ObjectHideFlags: 0
@@ -357,6 +357,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36ff6c9fed1bfad4aaf993a9ef4b3f4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Scene01Events
+  events: []
   FadeIn: {fileID: 1941871323}
   NPC: {fileID: 1376152662}
   TextBox: {fileID: 770600113}
@@ -365,8 +366,11 @@ MonoBehaviour:
   textLength: 0
   mainTextObject: {fileID: 1039399068}
   nextButton: {fileID: 1248098778}
-  eventPos: 0
   charName: {fileID: 1652292896}
+  SelectE1: {fileID: 0}
+  SelectE2: {fileID: 0}
+  SelectE3: {fileID: 0}
+  SelectE4: {fileID: 0}
 --- !u!4 &551993302
 Transform:
   m_ObjectHideFlags: 0
@@ -667,7 +671,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1039399069
 MonoBehaviour:
   m_ObjectHideFlags: 0

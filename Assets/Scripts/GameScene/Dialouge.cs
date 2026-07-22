@@ -10,5 +10,4 @@ public class Dialouge
     public string[] names;
     [TextArea(3, 10)]
     public string[] sentences;
-    public Image[] images;
 }

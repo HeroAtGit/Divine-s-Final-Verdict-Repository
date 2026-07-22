@@ -1,0 +1,377 @@
+fileFormatVersion: 2
+guid: 8291678e21f26bf448ab19638a2ae71c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3110780737519851164
+    second: Unedited_DVF_Logo-White_0
+  - first:
+      213: 5307692885498748322
+    second: Unedited_DVF_Logo-White_1
+  - first:
+      213: -1485902368963714731
+    second: Unedited_DVF_Logo-White_2
+  - first:
+      213: 2147436757518132419
+    second: Unedited_DVF_Logo-White_3
+  - first:
+      213: 4188427420422972150
+    second: Unedited_DVF_Logo-White_4
+  - first:
+      213: 4626195012554511800
+    second: Unedited_DVF_Logo-White_5
+  - first:
+      213: -3022131595406780635
+    second: Unedited_DVF_Logo-White_6
+  - first:
+      213: 7876028797097388438
+    second: Unedited_DVF_Logo-White_7
+  - first:
+      213: -3836422587432454747
+    second: Unedited_DVF_Logo-White_8
+  - first:
+      213: -4542743440406517131
+    second: Unedited_DVF_Logo-White_9
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Unedited_DVF_Logo-White_0
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 77
+        width: 363
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 469600e966944d4d0800000000000000
+      internalID: -3110780737519851164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Unedited_DVF_Logo-White_1
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 383
+        width: 29
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ad5509de86b8a940800000000000000
+      internalID: 5307692885498748322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Unedited_DVF_Logo-White_2
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 284
+        width: 13
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 551a1070ba3016be0800000000000000
+      internalID: -1485902368963714731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Unedited_DVF_Logo-White_3
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 239
+        width: 49
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c42c757a5a3dcd10800000000000000
+      internalID: 2147436757518132419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Unedited_DVF_Logo-White_4
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 196
+        width: 14
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f221d13c88402a30800000000000000
+      internalID: 4188427420422972150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Unedited_DVF_Logo-White_5
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 195
+        width: 15
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b5def07adb833040800000000000000
+      internalID: 4626195012554511800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Unedited_DVF_Logo-White_6
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 196
+        width: 12
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5275b4f635b3f06d0800000000000000
+      internalID: -3022131595406780635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Unedited_DVF_Logo-White_7
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 224
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 699acb346764d4d60800000000000000
+      internalID: 7876028797097388438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Unedited_DVF_Logo-White_8
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 195
+        width: 27
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a5bdc3abf942cac0800000000000000
+      internalID: -3836422587432454747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Unedited_DVF_Logo-White_9
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 137
+        width: 24
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57a65d0d8eee4f0c0800000000000000
+      internalID: -4542743440406517131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Unedited_DVF_Logo-White_0: -3110780737519851164
+      Unedited_DVF_Logo-White_1: 5307692885498748322
+      Unedited_DVF_Logo-White_2: -1485902368963714731
+      Unedited_DVF_Logo-White_3: 2147436757518132419
+      Unedited_DVF_Logo-White_4: 4188427420422972150
+      Unedited_DVF_Logo-White_5: 4626195012554511800
+      Unedited_DVF_Logo-White_6: -3022131595406780635
+      Unedited_DVF_Logo-White_7: 7876028797097388438
+      Unedited_DVF_Logo-White_8: -3836422587432454747
+      Unedited_DVF_Logo-White_9: -4542743440406517131
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
