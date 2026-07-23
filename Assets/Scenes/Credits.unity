@@ -154,8 +154,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000030517, y: -2880.8}
-  m_SizeDelta: {x: 1484.7, y: 4681.5947}
+  m_AnchoredPosition: {x: 0.000030517, y: -3048.599}
+  m_SizeDelta: {x: 1484.7, y: 5017.1924}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &192432904
 Animator:
@@ -200,23 +200,24 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "DIVINE\u2019S FINAL VERDICT \r\n\r\n\r\nCreated by Friends Padala Studios
-    (2026)\r\n\r\n------------------------------------------------\r\n\r\nGame Director
-    | Lihoviny (@koisntx)\r\nLead Writer | Lihoviny (@koisntx)\r\n\r\nLead Artist
-    | Jarvis (@IAm_Meh)\r\nCo-Artists |  Yui (@kitcatartz), EJ (@chimeralover)\r\n\r\nLead
+    (2026)\r\n\r\n---------------------------------------------------\r\n\r\nGame
+    Director | Lihoviny (@koisntx)\r\nLead Writer | Lihoviny (@koisntx)\r\n\r\nLead
+    Artist | Jarvis (@IAm_Meh)\r\nCo-Artists |  Yui (@kitcatartz), EJ (@chimeralover)\r\n\r\nLead
     UI Designer | Yui (@kitcatartz)\r\nCo-UI Designer | EJ (@chimeralover) \r\n\r\nLead
-    Programmer | Axcel (@MyHeroMC) \r\nCo-Programmer | Yosh (@Mitsune) \r\n\r\n------------------------------------------------\r\n\r\n<
+    Programmer | Axcel (@MyHeroMC) \r\nCo-Programmer | Yosh (@Mitsune) \r\n\r\n---------------------------------------------------\r\n\r\n<
     BACKGROUND MUSIC > \r\n\r\nMain Menu | Misery \r\nScene 1 | Siren of Sin (blood
     in the water) \r\nScene 2 | Labyrinth (clockwork choir version) \r\nEnding 1
     | Tenderness\r\nEnding 2 | My Demons\r\nfrom Love & Terror BGM Pack Vol 01 &
     02\r\nby Melancholy Marionette on Itch.io\r\n\r\n\r\nEnding Credits | Middle
-    Man\r\nby Pau theshark on Youtube\r\n\r\n------------------------------------------------\r\n\r\n<
+    Man\r\nby Pau theshark on Youtube\r\n\r\n---------------------------------------------------\r\n\r\n<
     SOUND EFFECTS >\r\n\r\nButton Select | Paper Rustle \r\nby sokworks on Freesound\r\n\r\nJudgement's
     Cackle | Demonic laughing,\r\n male, easily processed 1 \r\nby ZapSplat on ZapSplat\r\n\r\nJustice\u2019s
     Weeping | Human, woman, \r\nfemale, subtle crying or sobbing \r\nby Jessey Drake
-    on ZapSplat\r\n\r\n------------------------------------------------\r\n\r\n<
+    on ZapSplat\r\n\r\n---------------------------------------------------\r\n\r\n<
     FONT DESIGN > \r\n\r\nBleeding Cowboys | Segments Design \r\nlink: https://www.facebook.com/segmentsdesign?_rdc=2&_rdr#\r\n\r\nKingjola
     | Lars Manenschijn\r\nlink: https://lars-manenschijn.nl/ \r\n\r\nVictorian Free
-    Ornaments Two | Intellecta Design\r\nlink: https://www.intellectafonts.com/ \r\n"
+    Ornaments Two | Intellecta Design\r\nlink: https://www.intellectafonts.com/ \n\n---------------------------------------------------\n\n\nTHANK
+    YOU FOR PLAYING!!!\r\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -249,7 +250,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 1
+  m_fontStyle: 33
   m_HorizontalAlignment: 32
   m_VerticalAlignment: 256
   m_textAlignment: 65535
