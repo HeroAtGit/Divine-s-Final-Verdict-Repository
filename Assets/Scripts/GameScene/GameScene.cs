@@ -74,7 +74,6 @@ public class GameScene : MonoBehaviour
         yield return new WaitForSeconds(0.05f);
         nextButton.SetActive(true);
         eventPos = 2;
-        
     }
 
     IEnumerator E02()

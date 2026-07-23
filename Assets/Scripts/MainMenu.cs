@@ -6,29 +6,42 @@ using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour
 {
     [SerializeField] GameObject fadeOut;
+    [SerializeField] GameObject fadeIn;
+
+    [SerializeField] AudioSource buttonSfx;
+
     void Start()
     {
-        
+        StartCoroutine(Fadein());
     }
 
+    private IEnumerator Fadein()
+    {
+        yield return new WaitForSeconds(1);
+        fadeIn.SetActive(false);
+    }
     public void StartGame()
     {
+        buttonSfx.Play();
         fadeOut.SetActive(true);
         StartCoroutine(TransferToGame());
     }
 
     public void OpenSettings()
     {
+        buttonSfx.Play();
         fadeOut.SetActive(true);
         StartCoroutine(TransferToSettings());
     }
     public void OpenCredits()
     {
+        buttonSfx.Play();
         fadeOut.SetActive(true);
         StartCoroutine(TransferToCredits());
     }
     public void OpenExtras()
     {
+        buttonSfx.Play();
         fadeOut.SetActive(true);
         StartCoroutine(TransferToExtras());
     }
