@@ -7,10 +7,18 @@ public class GameScene : MonoBehaviour
     public List<DialougeTrigger> events = new List<DialougeTrigger>();
 
     //Game Objects
+    public GameObject BG;
+    public GameObject TextBox;
     public GameObject FadeIn;
+    public GameObject NPCTable;
+    public GameObject MMPodium;
     public GameObject NPC;
     public GameObject StatueBG;
-    public GameObject TextBox;
+    public GameObject middleMan;
+    public GameObject MMJustice;
+    public GameObject MMJudgement;
+    public GameObject MaskButtons;
+    public GameObject DestinationButtons;
     [SerializeField] GameObject mainTextObject;
 
     //Warning Backgrounds

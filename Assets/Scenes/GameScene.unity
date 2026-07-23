@@ -397,22 +397,30 @@ MonoBehaviour:
   - {fileID: 1637057518}
   - {fileID: 2142789824}
   - {fileID: 1921292848}
+  BG: {fileID: 0}
+  TextBox: {fileID: 770600113}
   FadeIn: {fileID: 1941871323}
+  NPCTable: {fileID: 0}
+  MMPodium: {fileID: 0}
   NPC: {fileID: 1376152662}
   StatueBG: {fileID: 0}
-  TextBox: {fileID: 770600113}
+  middleMan: {fileID: 0}
+  MMJustice: {fileID: 0}
+  MMJudgement: {fileID: 0}
+  MaskButtons: {fileID: 0}
+  DestinationButtons: {fileID: 0}
   mainTextObject: {fileID: 1039399068}
-  heavenWarningBG: {fileID: 1827693247}
-  hellWarningBG: {fileID: 1042991666}
-  heavensLamentDialogue: {fileID: 1210090814}
-  hellsGrumbleDialogue: {fileID: 1743000838}
+  heavenWarningBG: {fileID: 0}
+  hellWarningBG: {fileID: 0}
+  heavensLamentDialogue: {fileID: 0}
+  hellsGrumbleDialogue: {fileID: 0}
   SelectE1: {fileID: 31241546}
   SelectE2: {fileID: 1637057520}
   SelectE3: {fileID: 2142789826}
   SelectE4: {fileID: 1921292848}
   SelectE5: {fileID: 1012040674}
-  SelectE6: {fileID: 880410738}
-  SelectE7: {fileID: 2133513491}
+  SelectE6: {fileID: 0}
+  SelectE7: {fileID: 0}
   dialougeManager: {fileID: 0}
   moralityManager: {fileID: 0}
 --- !u!4 &551993302

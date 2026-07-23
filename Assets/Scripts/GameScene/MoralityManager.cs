@@ -21,6 +21,7 @@ public class MoralityManager : MonoBehaviour
     // Ending Options
     public enum GameEnding
     {
+        None,
         DeathHeaven,
         DeathHell,
         IdealEnd,
