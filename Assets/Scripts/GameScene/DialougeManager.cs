@@ -1,9 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
-using UnityEngine;
 using Unity.VisualScripting;
+using UnityEngine;
 using UnityEngine.UIElements;
+
 
 public class DialougeManager : MonoBehaviour
 {
@@ -15,6 +16,7 @@ public class DialougeManager : MonoBehaviour
     public Queue<string> sentences;
 
 
+    public event System.Action onDialougeEnd;
     void Start()
     {
         names = new Queue<string>();
@@ -28,9 +30,10 @@ public class DialougeManager : MonoBehaviour
         {
             DisplayNextSentence();
         }
+
     }
 
-    public void StartDialouge (Dialouge dialouge)
+    public void StartDialouge(Dialouge dialouge)
     {
         names.Clear();
         sentences.Clear();
@@ -43,10 +46,11 @@ public class DialougeManager : MonoBehaviour
         foreach (string sentence in dialouge.sentences)
         {
             sentences.Enqueue(sentence);
+
         }
 
         DisplayNextSentence();
-        
+
     }
     public void DisplayNextSentence()
     {
@@ -73,21 +77,21 @@ public class DialougeManager : MonoBehaviour
         }
     }
     //Text Roll System for dialouge
-    IEnumerator TypeSentence (string sentence)
+    IEnumerator TypeSentence(string sentence)
     {
         dialougeText.text = "";
-        foreach(char letter in sentence.ToCharArray())
+        foreach (char letter in sentence.ToCharArray())
         {
             dialougeText.text += letter;
             yield return null;
         }
-    }
 
+    }
     public void EndDialouge()
     {
         TextBox.SetActive(false);
-        StopAllCoroutines();
         Debug.Log("End of Dialouge");
+        onDialougeEnd?.Invoke();
     }
 
 }

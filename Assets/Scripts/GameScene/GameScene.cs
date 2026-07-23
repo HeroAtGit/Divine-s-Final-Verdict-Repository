@@ -5,56 +5,141 @@ using UnityEngine;
 public class GameScene : MonoBehaviour
 {
     public List<DialougeTrigger> events = new List<DialougeTrigger>();
+
+    //Game Objects
     public GameObject FadeIn;
     public GameObject NPC;
+    public GameObject StatueBG;
     public GameObject TextBox;
-    //[SerializeField] int eventPos = 0;
-    [SerializeField] string textToSpeak;
-    [SerializeField] int currentTextLength;
-    [SerializeField] int textLength;
     [SerializeField] GameObject mainTextObject;
-    [SerializeField] GameObject nextButton;
-    [SerializeField] GameObject charName;
 
+    //Events
     [SerializeField] private DialougeTrigger SelectE1;
     [SerializeField] private DialougeTrigger SelectE2;
     [SerializeField] private DialougeTrigger SelectE3;
     [SerializeField] private DialougeTrigger SelectE4;
+    [SerializeField] private DialougeTrigger SelectE5;
 
-    void Update()
-    {
-       
-    }
+    [SerializeField] private DialougeManager dialougeManager;
 
     void Start()
-
     {
-        StartCoroutine(E01()); 
+        if (dialougeManager == null)
+        {
+            dialougeManager = FindAnyObjectByType<DialougeManager>(FindObjectsInactive.Include);
+        }
+    
+        StartCoroutine(E01());
     }
 
+    #region events
     public IEnumerator E01()
     {
+        yield return new WaitForSeconds(2);
+        FadeIn.SetActive(false);
+        NPC.SetActive(true);
 
-       yield return new WaitForSeconds(1);
-       FadeIn.SetActive(false);
-       NPC.SetActive(true);
+        yield return new WaitForSeconds(1.5f);
+        mainTextObject.SetActive(true);
+        TextBox.SetActive(true);
+        SelectE1.gameObject.SetActive(true);
+        dialougeManager.onDialougeEnd += OnE01Finished;
 
-        // Text function
-       
-       yield return new WaitForSeconds(1.5f);
-       mainTextObject.SetActive(true);
-       SelectE1.gameObject.SetActive(true);
-       SelectE1.TriggerDialouge();
+        SelectE1.TriggerDialouge();
+    }
+    void OnE01Finished()
+    {
+        dialougeManager.onDialougeEnd -= OnE01Finished;
+        SelectE1.gameObject.SetActive(false);
+        StartCoroutine(E02());
     }
 
     public IEnumerator E02()
     {
-        // Text function
-
         yield return new WaitForSeconds(1);
+        FadeIn.SetActive(false);
+        NPC.SetActive(true);
+
+        yield return new WaitForSeconds(1.5f);
         mainTextObject.SetActive(true);
+        TextBox.SetActive(true);
         SelectE2.gameObject.SetActive(true);
+        dialougeManager.onDialougeEnd += OnE02Finished;
+
         SelectE2.TriggerDialouge();
     }
+    void OnE02Finished()
+    {
+        dialougeManager.onDialougeEnd -= OnE02Finished;
+        SelectE2.gameObject.SetActive(false);
+        StartCoroutine(E03());
+    }
+
+    public IEnumerator E03()
+    {
+        yield return new WaitForSeconds(1);
+        NPC.SetActive(true);
+
+        yield return new WaitForSeconds(1.5f);
+        mainTextObject.SetActive(true);
+        TextBox.SetActive(true);
+        SelectE3.gameObject.SetActive(true);
+
+        dialougeManager.onDialougeEnd += OnE03Finished;
+        SelectE3.TriggerDialouge();
+    }
+    void OnE03Finished()
+    {
+        dialougeManager.onDialougeEnd -= OnE03Finished;
+        SelectE3.gameObject.SetActive(false);
+        StartCoroutine(E04());
+    }
+
+    public IEnumerator E04()
+    {
+        yield return new WaitForSeconds(1);
+        FadeIn.SetActive(false);
+        NPC.SetActive(true);
+
+        yield return new WaitForSeconds(1.5f);
+        mainTextObject.SetActive(true);
+        TextBox.SetActive(true);
+        SelectE4.gameObject.SetActive(true);
+
+        dialougeManager.onDialougeEnd += OnE04Finished;
+
+        SelectE4.TriggerDialouge();
+    }
+    void OnE04Finished()
+    {
+        dialougeManager.onDialougeEnd -= OnE04Finished;
+        SelectE4.gameObject.SetActive(false);
+        StartCoroutine(E05());
+    }
+
+    public IEnumerator E05()
+    {
+        yield return new WaitForSeconds(1);
+        FadeIn.SetActive(false);
+        NPC.SetActive(true);
+
+        yield return new WaitForSeconds(1.5f);
+        mainTextObject.SetActive(true);
+        TextBox.SetActive(true);
+        SelectE5.gameObject.SetActive(true);
+        dialougeManager.onDialougeEnd += OnE05Finished;
+
+        SelectE5.TriggerDialouge();
+    }
+    void OnE05Finished()
+    {
+        dialougeManager.onDialougeEnd -= OnE05Finished;
+        SelectE4.gameObject.SetActive(false);
+        //StartCoroutine(E06());//
+    }
+
+
+    #endregion
 
 }
+
