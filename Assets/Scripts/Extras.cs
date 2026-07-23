@@ -7,14 +7,13 @@ using TMPro;
 
 public class Extras : MonoBehaviour
 {
-    //private int eventPos = 0;
+    //private int pagePos = 0;
     public GameObject Button;
     void Start()
     {
         //StartCoroutine(P01());
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Return))

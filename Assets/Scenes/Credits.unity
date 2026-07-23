@@ -154,8 +154,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -1350}
-  m_SizeDelta: {x: 1480.3765, y: 1623.3064}
+  m_AnchoredPosition: {x: 0.000030517, y: -2880.8}
+  m_SizeDelta: {x: 1484.7, y: 4681.5947}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &192432904
 Animator:
@@ -199,29 +199,24 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Divine''s Final Verdict
-
-
-    Writer/Director - Kai
-
-    Lead Artist -
-    Jarvis
-
-    Artist - EJ
-
-    Artist - Yui
-
-    Lead Programmer - Axcel
-
-    Programmer
-    - Yosh
-
-
-    Special Thanks to  Bantatay Corporation
-
-
-
-'
+  m_text: "DIVINE\u2019S FINAL VERDICT \r\n\r\n\r\nCreated by Friends Padala Studios
+    (2026)\r\n\r\n------------------------------------------------\r\n\r\nGame Director
+    | Lihoviny (@koisntx)\r\nLead Writer | Lihoviny (@koisntx)\r\n\r\nLead Artist
+    | Jarvis (@IAm_Meh)\r\nCo-Artists |  Yui (@kitcatartz), EJ (@chimeralover)\r\n\r\nLead
+    UI Designer | Yui (@kitcatartz)\r\nCo-UI Designer | EJ (@chimeralover) \r\n\r\nLead
+    Programmer | Axcel (@MyHeroMC) \r\nCo-Programmer | Yosh (@Mitsune) \r\n\r\n------------------------------------------------\r\n\r\n<
+    BACKGROUND MUSIC > \r\n\r\nMain Menu | Misery \r\nScene 1 | Siren of Sin (blood
+    in the water) \r\nScene 2 | Labyrinth (clockwork choir version) \r\nEnding 1
+    | Tenderness\r\nEnding 2 | My Demons\r\nfrom Love & Terror BGM Pack Vol 01 &
+    02\r\nby Melancholy Marionette on Itch.io\r\n\r\n\r\nEnding Credits | Middle
+    Man\r\nby Pau theshark on Youtube\r\n\r\n------------------------------------------------\r\n\r\n<
+    SOUND EFFECTS >\r\n\r\nButton Select | Paper Rustle \r\nby sokworks on Freesound\r\n\r\nJudgement's
+    Cackle | Demonic laughing,\r\n male, easily processed 1 \r\nby ZapSplat on ZapSplat\r\n\r\nJustice\u2019s
+    Weeping | Human, woman, \r\nfemale, subtle crying or sobbing \r\nby Jessey Drake
+    on ZapSplat\r\n\r\n------------------------------------------------\r\n\r\n<
+    FONT DESIGN > \r\n\r\nBleeding Cowboys | Segments Design \r\nlink: https://www.facebook.com/segmentsdesign?_rdc=2&_rdr#\r\n\r\nKingjola
+    | Lars Manenschijn\r\nlink: https://lars-manenschijn.nl/ \r\n\r\nVictorian Free
+    Ornaments Two | Intellecta Design\r\nlink: https://www.intellectafonts.com/ \r\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -248,8 +243,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 70
-  m_fontSizeBase: 70
+  m_fontSize: 35
+  m_fontSizeBase: 35
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -312,6 +307,7 @@ GameObject:
   - component: {fileID: 421765502}
   - component: {fileID: 421765504}
   - component: {fileID: 421765503}
+  - component: {fileID: 421765505}
   m_Layer: 5
   m_Name: Title
   m_TagString: Untagged
@@ -373,6 +369,28 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 421765501}
   m_CullTransparentMesh: 1
+--- !u!95 &421765505
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 421765501}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 36c1597496100044384840f257605578, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &484046835
 GameObject:
   m_ObjectHideFlags: 0
@@ -384,7 +402,7 @@ GameObject:
   - component: {fileID: 484046837}
   - component: {fileID: 484046836}
   m_Layer: 0
-  m_Name: SceneManager
+  m_Name: CreditsManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -403,6 +421,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Credits
   TextTip: {fileID: 1469460990}
+  TitleCard: {fileID: 421765501}
 --- !u!4 &484046837
 Transform:
   m_ObjectHideFlags: 0
@@ -887,7 +906,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 126.02545
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -971,7 +990,7 @@ Transform:
   m_GameObject: {fileID: 1531208887}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 906.1974, y: 530.7555, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

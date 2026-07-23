@@ -114,30 +114,8 @@ public class GameScene : MonoBehaviour
     {
         dialougeManager.onDialougeEnd -= OnE04Finished;
         SelectE4.gameObject.SetActive(false);
-        StartCoroutine(E05());
+        //StartCoroutine(E05());
     }
-
-    public IEnumerator E05()
-    {
-        yield return new WaitForSeconds(1);
-        FadeIn.SetActive(false);
-        NPC.SetActive(true);
-
-        yield return new WaitForSeconds(1.5f);
-        mainTextObject.SetActive(true);
-        TextBox.SetActive(true);
-        SelectE5.gameObject.SetActive(true);
-        dialougeManager.onDialougeEnd += OnE05Finished;
-
-        SelectE5.TriggerDialouge();
-    }
-    void OnE05Finished()
-    {
-        dialougeManager.onDialougeEnd -= OnE05Finished;
-        SelectE4.gameObject.SetActive(false);
-        //StartCoroutine(E06());//
-    }
-
 
     #endregion
 

@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class Credits : MonoBehaviour
 {
     [SerializeField] GameObject TextTip;
+    [SerializeField] GameObject TitleCard;
 
     void Start()
     {
@@ -25,6 +26,9 @@ public class Credits : MonoBehaviour
         TextTip.SetActive(true);
         yield return new WaitForSeconds(15);
         TextTip.SetActive(false);
+        yield return new WaitForSeconds(55);
+        TextTip.SetActive(true);
+        TitleCard.SetActive(true);
     }
 
     IEnumerator TransferToMainMenu()

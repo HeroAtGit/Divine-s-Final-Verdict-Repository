@@ -11,7 +11,6 @@ public class DialougeManager : MonoBehaviour
     public TextMeshProUGUI nameText;
     public TextMeshProUGUI dialougeText;
     public GameObject TextBox;
-    [SerializeField] int textLength;
     public Queue<string> names;
     public Queue<string> sentences;
 
@@ -21,7 +20,6 @@ public class DialougeManager : MonoBehaviour
     {
         names = new Queue<string>();
         sentences = new Queue<string>();
-
     }
 
     void Update()
@@ -67,6 +65,7 @@ public class DialougeManager : MonoBehaviour
         StartCoroutine(TypeSentence(sentence));
     }
 
+    //Text Roll System for dialouge
     IEnumerator TypeName(string name)
     {
         nameText.text = "";
@@ -76,11 +75,10 @@ public class DialougeManager : MonoBehaviour
             yield return null;
         }
     }
-    //Text Roll System for dialouge
     IEnumerator TypeSentence(string sentence)
     {
         dialougeText.text = "";
-        foreach (char letter in sentence.ToCharArray())
+        foreach (char letter in sentence)
         {
             dialougeText.text += letter;
             yield return null;
