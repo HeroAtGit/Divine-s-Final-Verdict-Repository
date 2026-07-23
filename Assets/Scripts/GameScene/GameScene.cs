@@ -125,11 +125,7 @@ public class GameScene : MonoBehaviour
 
     public IEnumerator E02()
     {
-        yield return new WaitForSeconds(1);
-        FadeIn.SetActive(false);
-        NPC.SetActive(true);
-
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(0.5f);
         mainTextObject.SetActive(true);
         TextBox.SetActive(true);
         SelectE2.gameObject.SetActive(true);
@@ -146,8 +142,11 @@ public class GameScene : MonoBehaviour
 
     public IEnumerator E03()
     {
-        yield return new WaitForSeconds(1);
-        NPC.SetActive(true);
+        yield return new WaitForSeconds(0.5f);
+        NPC.SetActive(false);
+        MaskButtons.SetActive(true);
+        middleMan.SetActive(true);
+
 
         yield return new WaitForSeconds(1.5f);
         mainTextObject.SetActive(true);
@@ -161,16 +160,17 @@ public class GameScene : MonoBehaviour
     {
         dialougeManager.onDialougeEnd -= OnE03Finished;
         SelectE3.gameObject.SetActive(false);
+        MaskButtons.SetActive(false);
         StartCoroutine(E04());
     }
 
     public IEnumerator E04()
     {
-        yield return new WaitForSeconds(1);
-        FadeIn.SetActive(false);
+        yield return new WaitForSeconds(0.5f);
+        middleMan.SetActive(false);
         NPC.SetActive(true);
 
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(1);
         mainTextObject.SetActive(true);
         TextBox.SetActive(true);
         SelectE4.gameObject.SetActive(true);
@@ -188,11 +188,7 @@ public class GameScene : MonoBehaviour
 
     public IEnumerator E05()
     {
-        yield return new WaitForSeconds(1);
-        FadeIn.SetActive(false);
-        NPC.SetActive(true);
-
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(0.5f);
         mainTextObject.SetActive(true);
         TextBox.SetActive(true);
         SelectE5.gameObject.SetActive(true);
@@ -209,11 +205,7 @@ public class GameScene : MonoBehaviour
 
     public IEnumerator E06()
     {
-        yield return new WaitForSeconds(1);
-        FadeIn.SetActive(false);
-        NPC.SetActive(true);
-
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(0.5f);
         mainTextObject.SetActive(true);
         TextBox.SetActive(true);
         SelectE6.gameObject.SetActive(true);
@@ -230,11 +222,8 @@ public class GameScene : MonoBehaviour
 
     public IEnumerator E07()
     {
-        yield return new WaitForSeconds(1);
-        FadeIn.SetActive(false);
-        NPC.SetActive(true);
 
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(0.5f);
         mainTextObject.SetActive(true);
         TextBox.SetActive(true);
         SelectE7.gameObject.SetActive(true);
