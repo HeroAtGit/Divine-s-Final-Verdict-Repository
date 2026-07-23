@@ -7,7 +7,7 @@ using TMPro;
 
 public class Extras : MonoBehaviour
 {
-    private int eventPos = 0;
+    //private int eventPos = 0;
     public GameObject Button;
     void Start()
     {
