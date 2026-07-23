@@ -26,7 +26,7 @@ public class Credits : MonoBehaviour
         TextTip.SetActive(true);
         yield return new WaitForSeconds(15);
         TextTip.SetActive(false);
-        yield return new WaitForSeconds(58);
+        yield return new WaitForSeconds(56);
         TitleCard.SetActive(true);
         TextTip.SetActive(true);
     }
