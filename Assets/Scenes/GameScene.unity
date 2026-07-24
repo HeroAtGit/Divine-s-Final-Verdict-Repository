@@ -129,6 +129,7 @@ GameObject:
   m_Component:
   - component: {fileID: 31241545}
   - component: {fileID: 31241546}
+  - component: {fileID: 31241547}
   m_Layer: 0
   m_Name: E1
   m_TagString: EditorOnly
@@ -186,6 +187,19 @@ MonoBehaviour:
     - I've heard enough. It is time for your trial...
     - The time is now for the trials.. You will choose either the path of Justice,
       or.. the path of Judgement..
+--- !u!114 &31241547
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 31241544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 192b6e103ae82884a840d88839c45db2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NewMonoBehaviourScript
+  soulType: 0
 --- !u!1 &334360267
 GameObject:
   m_ObjectHideFlags: 0
@@ -519,8 +533,10 @@ MonoBehaviour:
   SelectE5: {fileID: 1012040674}
   SelectE6: {fileID: 880410738}
   SelectE7: {fileID: 2133513491}
+  soulTypes: 00000000000000000000000000000000000000000000000000000000
   dialougeManager: {fileID: 622641293}
   moralityManager: {fileID: 911905432}
+  soulData: {fileID: 0}
 --- !u!4 &551993302
 Transform:
   m_ObjectHideFlags: 0
@@ -748,7 +764,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 758260179}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 551993301}
+        m_TargetAssemblyTypeName: GameScene, Assembly-CSharp
+        m_MethodName: SelectHell
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &758260179
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1116,6 +1144,7 @@ GameObject:
   m_Component:
   - component: {fileID: 880410737}
   - component: {fileID: 880410738}
+  - component: {fileID: 880410739}
   m_Layer: 0
   m_Name: E6
   m_TagString: Untagged
@@ -1155,6 +1184,19 @@ MonoBehaviour:
     - Elemental 6
     sentences:
     - Buh
+--- !u!114 &880410739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 880410736}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 192b6e103ae82884a840d88839c45db2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SoulData
+  soulType: 0
 --- !u!1 &911905431
 GameObject:
   m_ObjectHideFlags: 0
@@ -1351,7 +1393,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 973494833}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 551993301}
+        m_TargetAssemblyTypeName: GameScene, Assembly-CSharp
+        m_MethodName: SelectJudgement
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &973494833
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1400,6 +1454,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1012040673}
   - component: {fileID: 1012040674}
+  - component: {fileID: 1012040675}
   m_Layer: 0
   m_Name: E5
   m_TagString: Untagged
@@ -1439,6 +1494,19 @@ MonoBehaviour:
     - EEEEE
     sentences:
     - Awesomes#5
+--- !u!114 &1012040675
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1012040672}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 192b6e103ae82884a840d88839c45db2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SoulData
+  soulType: 0
 --- !u!1 &1035828869
 GameObject:
   m_ObjectHideFlags: 0
@@ -1520,7 +1588,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1035828872}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 551993301}
+        m_TargetAssemblyTypeName: GameScene, Assembly-CSharp
+        m_MethodName: SelectHeaven
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1035828872
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2012,6 +2092,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1637057519}
   - component: {fileID: 1637057520}
+  - component: {fileID: 1637057521}
   m_Layer: 0
   m_Name: E2
   m_TagString: Untagged
@@ -2053,6 +2134,19 @@ MonoBehaviour:
     sentences:
     - thank you, thank you, thank you
     - sendthistosomeonewhosthegoat
+--- !u!114 &1637057521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1637057518}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 192b6e103ae82884a840d88839c45db2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SoulData
+  soulType: 1
 --- !u!1 &1652292896
 GameObject:
   m_ObjectHideFlags: 0
@@ -2402,7 +2496,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1740773328}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 551993301}
+        m_TargetAssemblyTypeName: GameScene, Assembly-CSharp
+        m_MethodName: SelectJustice
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1740773328
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2525,7 +2631,7 @@ MonoBehaviour:
   m_BlockingObjects: 0
   m_BlockingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 0
 --- !u!114 &1757491626
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2966,6 +3072,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1921292847}
   - component: {fileID: 1921292848}
+  - component: {fileID: 1921292849}
   m_Layer: 0
   m_Name: E4
   m_TagString: Untagged
@@ -3005,6 +3112,19 @@ MonoBehaviour:
     - LeBron
     sentences:
     - Thas why he's the goat
+--- !u!114 &1921292849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1921292846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 192b6e103ae82884a840d88839c45db2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SoulData
+  soulType: 0
 --- !u!1 &1941871323
 GameObject:
   m_ObjectHideFlags: 0
@@ -3182,6 +3302,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2133513490}
   - component: {fileID: 2133513491}
+  - component: {fileID: 2133513492}
   m_Layer: 0
   m_Name: E7
   m_TagString: Untagged
@@ -3221,6 +3342,19 @@ MonoBehaviour:
     - Epic Seven
     sentences:
     - This Truly Was A Divine's Final Verdict
+--- !u!114 &2133513492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2133513489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 192b6e103ae82884a840d88839c45db2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SoulData
+  soulType: 0
 --- !u!1 &2142789824
 GameObject:
   m_ObjectHideFlags: 0
@@ -3231,6 +3365,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2142789825}
   - component: {fileID: 2142789826}
+  - component: {fileID: 2142789827}
   m_Layer: 0
   m_Name: E3
   m_TagString: Untagged
@@ -3267,9 +3402,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialougeTrigger
   dialouge:
     names:
-    - BigT
+    - Middle Man
+    - Middle Man
     sentences:
-    - 'This is Pog AF '
+    - I'm HIM
+    - John Middle Man Divine's Final Verdict himself!
+--- !u!114 &2142789827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2142789824}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 192b6e103ae82884a840d88839c45db2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SoulData
+  soulType: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
