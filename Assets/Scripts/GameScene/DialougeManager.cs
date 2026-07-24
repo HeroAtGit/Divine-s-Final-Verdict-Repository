@@ -28,7 +28,6 @@ public class DialougeManager : MonoBehaviour
         {
             DisplayNextSentence();
         }
-
     }
 
     public void StartDialouge(Dialouge dialouge)
