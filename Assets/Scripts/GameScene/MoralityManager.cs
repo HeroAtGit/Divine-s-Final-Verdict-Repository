@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class MoralityManager : MonoBehaviour
 {
+
     // Point Trackers (default starting at 50)
     [Header("Morality Bars")]
     public int heavenBar = 50;

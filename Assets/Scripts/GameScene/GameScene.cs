@@ -1,24 +1,29 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameScene : MonoBehaviour
 {
     public List<DialougeTrigger> events = new List<DialougeTrigger>();
 
     //Game Objects
-    public GameObject BG;
+    public GameObject bg;
     public GameObject TextBox;
-    public GameObject FadeIn;
+    public GameObject fadeIn;
     public GameObject NPCTable;
     public GameObject MMPodium;
     public GameObject NPC;
-    public GameObject StatueBG;
+    public GameObject statueBG;
+    public GameObject blackBG;
     public GameObject middleMan;
     public GameObject MMJustice;
     public GameObject MMJudgement;
-    public GameObject MaskButtons;
-    public GameObject DestinationButtons;
+    public GameObject JusticeMask;
+    public GameObject JudgementMask;
+    public GameObject maskButtons;
+    public GameObject destinationButtons;
+    public GameObject endBG;
     [SerializeField] GameObject mainTextObject;
 
     //Warning Backgrounds
@@ -36,7 +41,21 @@ public class GameScene : MonoBehaviour
     [SerializeField] private DialougeTrigger SelectE5;
     [SerializeField] private DialougeTrigger SelectE6;
     [SerializeField] private DialougeTrigger SelectE7;
+    [SerializeField] private DialougeTrigger SelectE8;
+    [SerializeField] private DialougeTrigger SelectE9;
+    [SerializeField] private DialougeTrigger SelectE10;
+    [SerializeField] private DialougeTrigger SelectE11;
+    [SerializeField] private DialougeTrigger SelectE12;
+    [SerializeField] private DialougeTrigger SelectE13;
+    [SerializeField] private DialougeTrigger SelectE14;
+    [SerializeField] private DialougeTrigger SelectE15;
+    [SerializeField] private DialougeTrigger SelectE16;
+    [SerializeField] private DialougeTrigger SelectE17;
+    [SerializeField] private DialougeTrigger SelectE18;
+    [SerializeField] private DialougeTrigger SelectE19;
+    [SerializeField] private DialougeTrigger SelectE20;
 
+    #region Systems
     // Each event now judges its own soul - set Good/Bad per event here.
     // Index 0 = E01's soul, index 1 = E02's soul, ... index 6 = E07's soul.
     [Header("Per-Event Soul Types")]
@@ -70,7 +89,7 @@ public class GameScene : MonoBehaviour
             soulData = NPC.GetComponent<SoulData>();
             if (soulData == null)
             {
-                Debug.LogWarning("No SoulData component found on NPC GameObject.");
+                
             }
         }
 
@@ -80,8 +99,8 @@ public class GameScene : MonoBehaviour
             moralityManager.onWarningFaded += HandleWarningFaded;
         }
 
-        if (MaskButtons != null) MaskButtons.SetActive(false);
-        if (DestinationButtons != null) DestinationButtons.SetActive(false);
+        if (maskButtons != null) maskButtons.SetActive(false);
+        if (destinationButtons != null) destinationButtons.SetActive(false);
 
         StartCoroutine(E01());
     }
@@ -152,21 +171,21 @@ public class GameScene : MonoBehaviour
     IEnumerator WaitForMaskChoice()
     {
         chosenMask = null;
-        MaskButtons.SetActive(true);
+        maskButtons.SetActive(true);
         Debug.Log("Waiting for mask choice...");
         yield return new WaitUntil(() => chosenMask != null);
         Debug.Log($"Mask choice received: {chosenMask.Value}");
-        MaskButtons.SetActive(false);
+        maskButtons.SetActive(false);
     }
 
     IEnumerator WaitForDestinationChoice()
     {
         chosenDestination = null;
-        DestinationButtons.SetActive(true);
+        destinationButtons.SetActive(true);
         Debug.Log("Waiting for destination choice...");
         yield return new WaitUntil(() => chosenDestination != null);
         Debug.Log($"Destination choice received: {chosenDestination.Value}");
-        DestinationButtons.SetActive(false);
+        destinationButtons.SetActive(false);
     }
 
     // Blocks until the given warning dialogue actually finishes playing,
@@ -238,15 +257,16 @@ public class GameScene : MonoBehaviour
             TriggerGameEnding();
         }
     }
+    #endregion
 
     #region events
     public IEnumerator E01()
     {
-        if (soulData != null && soulTypes.Length > 0) soulData.soulType = soulTypes[0];
-
+        yield return null;
+        statueBG.SetActive(true);
+        blackBG.SetActive(true);
         yield return new WaitForSeconds(2);
-        FadeIn.SetActive(false);
-        NPC.SetActive(true);
+        fadeIn.SetActive(false);
 
         yield return new WaitForSeconds(1.5f);
         mainTextObject.SetActive(true);
@@ -260,14 +280,20 @@ public class GameScene : MonoBehaviour
     {
         dialougeManager.onDialougeEnd -= OnE01Finished;
         SelectE1.gameObject.SetActive(false);
-        StartCoroutine(RunVerdictThenContinue(0, E02()));
+        StartCoroutine(E02());
     }
 
     public IEnumerator E02()
     {
-        if (soulData != null && soulTypes.Length > 1) soulData.soulType = soulTypes[1];
+        yield return null;
+        fadeIn.SetActive(true);
+        statueBG.SetActive(false);
+        blackBG.SetActive(false);
+        bg.SetActive(true);
+        NPCTable.SetActive(true);
 
         yield return new WaitForSeconds(0.5f);
+        fadeIn.SetActive(false);
         mainTextObject.SetActive(true);
         TextBox.SetActive(true);
         SelectE2.gameObject.SetActive(true);
@@ -279,18 +305,15 @@ public class GameScene : MonoBehaviour
     {
         dialougeManager.onDialougeEnd -= OnE02Finished;
         SelectE2.gameObject.SetActive(false);
-        StartCoroutine(RunVerdictThenContinue(1, E03()));
+        StartCoroutine( E03());
     }
 
     public IEnumerator E03()
     {
-        if (soulData != null && soulTypes.Length > 2) soulData.soulType = soulTypes[2];
+        yield return new WaitForSeconds(0);
+        JusticeMask.SetActive(true);
 
-        yield return new WaitForSeconds(0.5f);
-        NPC.SetActive(false);
-        middleMan.SetActive(true);
-
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(1);
         mainTextObject.SetActive(true);
         TextBox.SetActive(true);
         SelectE3.gameObject.SetActive(true);
@@ -302,18 +325,16 @@ public class GameScene : MonoBehaviour
     {
         dialougeManager.onDialougeEnd -= OnE03Finished;
         SelectE3.gameObject.SetActive(false);
-        StartCoroutine(RunVerdictThenContinue(2, E04()));
+        StartCoroutine(E04());
     }
 
     public IEnumerator E04()
     {
-        if (soulData != null && soulTypes.Length > 3) soulData.soulType = soulTypes[3];
+        yield return new WaitForSeconds(0);
+        JusticeMask.SetActive(false);
+        JudgementMask.SetActive(true);
 
         yield return new WaitForSeconds(0.5f);
-        middleMan.SetActive(false);
-        NPC.SetActive(true);
-
-        yield return new WaitForSeconds(1);
         mainTextObject.SetActive(true);
         TextBox.SetActive(true);
         SelectE4.gameObject.SetActive(true);
@@ -326,12 +347,13 @@ public class GameScene : MonoBehaviour
     {
         dialougeManager.onDialougeEnd -= OnE04Finished;
         SelectE4.gameObject.SetActive(false);
-        StartCoroutine(RunVerdictThenContinue(3, E05()));
+        StartCoroutine(E05());
     }
 
     public IEnumerator E05()
     {
-        if (soulData != null && soulTypes.Length > 4) soulData.soulType = soulTypes[4];
+        yield return null;
+        JudgementMask.SetActive(false);
 
         yield return new WaitForSeconds(0.5f);
         mainTextObject.SetActive(true);
@@ -345,12 +367,14 @@ public class GameScene : MonoBehaviour
     {
         dialougeManager.onDialougeEnd -= OnE05Finished;
         SelectE5.gameObject.SetActive(false);
-        StartCoroutine(RunVerdictThenContinue(4, E06()));
+        StartCoroutine(E06());
     }
 
     public IEnumerator E06()
     {
-        if (soulData != null && soulTypes.Length > 5) soulData.soulType = soulTypes[5];
+        //Case
+        yield return null;
+        NPC.SetActive(true);
 
         yield return new WaitForSeconds(0.5f);
         mainTextObject.SetActive(true);
@@ -364,12 +388,19 @@ public class GameScene : MonoBehaviour
     {
         dialougeManager.onDialougeEnd -= OnE06Finished;
         SelectE6.gameObject.SetActive(false);
-        StartCoroutine(RunVerdictThenContinue(5, E07()));
+        StartCoroutine(E07());
     }
 
     public IEnumerator E07()
     {
-        if (soulData != null && soulTypes.Length > 6) soulData.soulType = soulTypes[6];
+        yield return null;
+        NPC.SetActive(false);
+        bg.SetActive(false);
+        NPCTable.SetActive(false);
+        blackBG.SetActive(true);
+        middleMan.SetActive(true);
+        maskButtons.SetActive(true);
+        MMPodium.SetActive(true);
 
         yield return new WaitForSeconds(0.5f);
         mainTextObject.SetActive(true);
@@ -383,11 +414,358 @@ public class GameScene : MonoBehaviour
     {
         dialougeManager.onDialougeEnd -= OnE07Finished;
         SelectE7.gameObject.SetActive(false);
-        // No next event - RunVerdictThenContinue will call TriggerGameEnding()
-        StartCoroutine(RunVerdictThenContinue(6, null));
+        StartCoroutine(E08());
     }
 
+    public IEnumerator E08()
+    {
+        //Case
+        yield return null;
+        blackBG.SetActive(false);
+        middleMan.SetActive(false);
+        maskButtons.SetActive(false);
+        MMPodium.SetActive(false);
+        NPC.SetActive(true);
+        bg.SetActive(true);
+        NPCTable.SetActive(true);
+
+        yield return new WaitForSeconds(0.5f);
+        mainTextObject.SetActive(true);
+        TextBox.SetActive(true);
+        SelectE8.gameObject.SetActive(true);
+        dialougeManager.onDialougeEnd += OnE08Finished;
+
+        SelectE8.TriggerDialouge();
+    }
+    void OnE08Finished()
+    {
+        dialougeManager.onDialougeEnd -= OnE08Finished;
+        SelectE8.gameObject.SetActive(false);
+        StartCoroutine(E09());
+    }
+
+    public IEnumerator E09()
+    {
+        yield return null;
+        NPC.SetActive(false);
+        bg.SetActive(false);
+        NPCTable.SetActive(false);
+        blackBG.SetActive(true);
+        middleMan.SetActive(true);
+        maskButtons.SetActive(true);
+        MMPodium.SetActive(true);
+
+        yield return new WaitForSeconds(0.5f);
+        mainTextObject.SetActive(true);
+        TextBox.SetActive(true);
+        SelectE9.gameObject.SetActive(true);
+        dialougeManager.onDialougeEnd += OnE09Finished;
+
+        SelectE9.TriggerDialouge();
+    }
+    void OnE09Finished()
+    {
+        dialougeManager.onDialougeEnd -= OnE09Finished;
+        SelectE9.gameObject.SetActive(false);
+        StartCoroutine(E10());
+    }
+
+    public IEnumerator E10()
+    {
+        //Case
+        yield return null;
+        blackBG.SetActive(false);
+        middleMan.SetActive(false);
+        maskButtons.SetActive(false);
+        MMPodium.SetActive(false);
+        NPC.SetActive(true);
+        bg.SetActive(true);
+        NPCTable.SetActive(true);
+
+        yield return new WaitForSeconds(0.5f);
+        mainTextObject.SetActive(true);
+        TextBox.SetActive(true);
+        SelectE10.gameObject.SetActive(true);
+        dialougeManager.onDialougeEnd += OnE10Finished;
+
+        SelectE10.TriggerDialouge();
+    }
+    void OnE10Finished()
+    {
+        dialougeManager.onDialougeEnd -= OnE10Finished;
+        SelectE10.gameObject.SetActive(false);
+        StartCoroutine(E11());
+    }
+
+    public IEnumerator E11()
+    {
+        //Masks
+        yield return null;
+        NPC.SetActive(false);
+        bg.SetActive(false);
+        NPCTable.SetActive(false);
+        blackBG.SetActive(true);
+        middleMan.SetActive(true);
+        maskButtons.SetActive(true);
+        MMPodium.SetActive(true);
+
+        yield return new WaitForSeconds(0.5f);
+        mainTextObject.SetActive(true);
+        TextBox.SetActive(true);
+        SelectE11.gameObject.SetActive(true);
+        dialougeManager.onDialougeEnd += OnE11Finished;
+
+        SelectE11.TriggerDialouge();
+    }
+    void OnE11Finished()
+    {
+        dialougeManager.onDialougeEnd -= OnE11Finished;
+        SelectE11.gameObject.SetActive(false);
+        StartCoroutine(E12());
+    }
+
+    public IEnumerator E12()
+    {
+        //Case
+        yield return null;
+        blackBG.SetActive(false);
+        middleMan.SetActive(false);
+        maskButtons.SetActive(false);
+        MMPodium.SetActive(false);
+        NPC.SetActive(true);
+        bg.SetActive(true);
+        NPCTable.SetActive(true);
+
+        yield return new WaitForSeconds(0.5f);
+        mainTextObject.SetActive(true);
+        TextBox.SetActive(true);
+        SelectE12.gameObject.SetActive(true);
+        dialougeManager.onDialougeEnd += OnE12Finished;
+
+        SelectE12.TriggerDialouge();
+    }
+    void OnE12Finished()
+    {
+        dialougeManager.onDialougeEnd -= OnE12Finished;
+        SelectE12.gameObject.SetActive(false);
+        StartCoroutine(E13());
+    }
+
+    public IEnumerator E13()
+    {
+        //Masks
+        yield return null;
+        NPC.SetActive(false);
+        bg.SetActive(false);
+        NPCTable.SetActive(false);
+        blackBG.SetActive(true);
+        middleMan.SetActive(true);
+        maskButtons.SetActive(true);
+        MMPodium.SetActive(true);
+
+        yield return new WaitForSeconds(0.5f);
+        mainTextObject.SetActive(true);
+        TextBox.SetActive(true);
+        SelectE13.gameObject.SetActive(true);
+        dialougeManager.onDialougeEnd += OnE13Finished;
+
+        SelectE13.TriggerDialouge();
+    }
+    void OnE13Finished()
+    {
+        dialougeManager.onDialougeEnd -= OnE13Finished;
+        SelectE13.gameObject.SetActive(false);
+        StartCoroutine(E14());
+    }
+
+    public IEnumerator E14()
+    {
+        //Case
+        yield return null;
+        blackBG.SetActive(false);
+        middleMan.SetActive(false);
+        maskButtons.SetActive(false);
+        MMPodium.SetActive(false);
+        NPC.SetActive(true);
+        bg.SetActive(true);
+        NPCTable.SetActive(true);
+
+        yield return new WaitForSeconds(0.5f);
+        mainTextObject.SetActive(true);
+        TextBox.SetActive(true);
+        SelectE14.gameObject.SetActive(true);
+        dialougeManager.onDialougeEnd += OnE14Finished;
+
+        SelectE14.TriggerDialouge();
+    }
+    void OnE14Finished()
+    {
+        dialougeManager.onDialougeEnd -= OnE14Finished;
+        SelectE14.gameObject.SetActive(false);
+        StartCoroutine(E15());
+    }
+
+    public IEnumerator E15()
+    {
+        //Masks
+        yield return null;
+        NPC.SetActive(false);
+        bg.SetActive(false);
+        NPCTable.SetActive(false);
+        blackBG.SetActive(true);
+        middleMan.SetActive(true);
+        maskButtons.SetActive(true);
+        MMPodium.SetActive(true);
+
+        yield return new WaitForSeconds(0.5f);
+        mainTextObject.SetActive(true);
+        TextBox.SetActive(true);
+        SelectE15.gameObject.SetActive(true);
+        dialougeManager.onDialougeEnd += OnE15Finished;
+
+        SelectE15.TriggerDialouge();
+    }
+    void OnE15Finished()
+    {
+        dialougeManager.onDialougeEnd -= OnE15Finished;
+        SelectE15.gameObject.SetActive(false);
+        StartCoroutine(E16());
+    }
+
+    public IEnumerator E16()
+    {
+        //Case
+        yield return null;
+        blackBG.SetActive(false);
+        middleMan.SetActive(false);
+        maskButtons.SetActive(false);
+        MMPodium.SetActive(false);
+        NPC.SetActive(true);
+        bg.SetActive(true);
+        NPCTable.SetActive(true);
+
+        yield return new WaitForSeconds(0.5f);
+        mainTextObject.SetActive(true);
+        TextBox.SetActive(true);
+        SelectE16.gameObject.SetActive(true);
+        dialougeManager.onDialougeEnd += OnE16Finished;
+
+        SelectE16.TriggerDialouge();
+    }
+    void OnE16Finished()
+    {
+        dialougeManager.onDialougeEnd -= OnE16Finished;
+        SelectE16.gameObject.SetActive(false);
+        StartCoroutine(E17());
+    }
+
+    public IEnumerator E17()
+    {
+        //Masks
+        yield return null;
+        NPC.SetActive(false);
+        bg.SetActive(false);
+        NPCTable.SetActive(false);
+        blackBG.SetActive(true);
+        middleMan.SetActive(true);
+        maskButtons.SetActive(true);
+        MMPodium.SetActive(true);
+
+        yield return new WaitForSeconds(0.5f);
+        mainTextObject.SetActive(true);
+        TextBox.SetActive(true);
+        SelectE17.gameObject.SetActive(true);
+        dialougeManager.onDialougeEnd += OnE17Finished;
+
+        SelectE17.TriggerDialouge();
+    }
+    void OnE17Finished()
+    {
+        dialougeManager.onDialougeEnd -= OnE17Finished;
+        SelectE17.gameObject.SetActive(false);
+        StartCoroutine(E18());
+    }
+
+    public IEnumerator E18()
+    {
+        //Case
+        yield return null;
+        blackBG.SetActive(false);
+        middleMan.SetActive(false);
+        maskButtons.SetActive(false);
+        MMPodium.SetActive(false);
+        NPC.SetActive(true);
+        bg.SetActive(true);
+        NPCTable.SetActive(true);
+
+        yield return new WaitForSeconds(0.5f);
+        mainTextObject.SetActive(true);
+        TextBox.SetActive(true);
+        SelectE18.gameObject.SetActive(true);
+        dialougeManager.onDialougeEnd += OnE18Finished;
+
+        SelectE18.TriggerDialouge();
+    }
+    void OnE18Finished()
+    {
+        dialougeManager.onDialougeEnd -= OnE18Finished;
+        SelectE18.gameObject.SetActive(false);
+        StartCoroutine(E19());
+    }
+
+    public IEnumerator E19()
+    {
+        //Masks
+        yield return null;
+        NPC.SetActive(false);
+        bg.SetActive(false);
+        NPCTable.SetActive(false);
+        blackBG.SetActive(true);
+        middleMan.SetActive(true);
+        maskButtons.SetActive(true);
+        MMPodium.SetActive(true);
+
+        yield return new WaitForSeconds(0.5f);
+        mainTextObject.SetActive(true);
+        TextBox.SetActive(true);
+        SelectE19.gameObject.SetActive(true);
+        dialougeManager.onDialougeEnd += OnE19Finished;
+
+        SelectE19.TriggerDialouge();
+    }
+    void OnE19Finished()
+    {
+        dialougeManager.onDialougeEnd -= OnE19Finished;
+        SelectE19.gameObject.SetActive(false);
+        StartCoroutine(E20());
+    }
+    public IEnumerator E20()
+    {
+        yield return null;
+        middleMan.SetActive(false);
+        maskButtons.SetActive(false);
+
+        yield return new WaitForSeconds(0.5f);
+        mainTextObject.SetActive(true);
+        TextBox.SetActive(true);
+        SelectE20.gameObject.SetActive(true);
+        dialougeManager.onDialougeEnd += OnE20Finished;
+
+        SelectE20.TriggerDialouge();
+    }
+    void OnE20Finished()
+    {
+        dialougeManager.onDialougeEnd -= OnE20Finished;
+        SelectE20.gameObject.SetActive(false);
+        StartCoroutine(TransferToCredits());
+    }
     #endregion
+    IEnumerator TransferToCredits()
+    {
+        yield return null;
+        SceneManager.LoadScene(3);
+    }
+
 
     private void TriggerGameEnding()
     {

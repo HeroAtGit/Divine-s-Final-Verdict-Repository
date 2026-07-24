@@ -166,27 +166,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialougeTrigger
   dialouge:
     names:
-    - ???
-    - Case #1
-    - Middle Man
-    - Case #1
-    - Case #1
-    - Middle Man
-    - ???
+    - ...
+    - ...
+    - ...
+    - ...
+    - ...
     sentences:
-    - THE TRIALS OF THIS SOUL SHALL COMMENCE...
-    - Uhm.. Hello.. Nice to meet you, I'd like to tell my story!! I-if you don't
-      mind..
-    - Go On..
-    - 'It all began in 1987, It was quite the year to be honest..
-
-      Id hate
-      it to happen again to me all of those things...'
-    - Blah-blablah! Blah, Blah blah. Blablablah. Blabla? BLALBBLABLBALBLABLA!, Blabla.
-      Blablabalbala. blablabla.
-    - I've heard enough. It is time for your trial...
-    - The time is now for the trials.. You will choose either the path of Justice,
-      or.. the path of Judgement..
+    - "Tell me something, newest member of the jury, how willing are you to see humans
+      apart from their lies? \r\n"
+    - 'Will you strip them off their complexity for the sake of command and duty?
+      Or will you consider their faults as human error and forgive what cannot be
+      undone? '
+    - "Welcome to Sheol, the subterranean land of the dead and humanity\u2019s common
+      grave. The realm in-between human and divine where stands a courtroom, built
+      for the appointed Virtue to pass the divine\u2019s final verdict."
+    - 'In here, reality merges between what was and was not. Their stories of life
+      and grief exist either in fiction or born from human error. '
+    - 'After all, no one is ever the same. '
 --- !u!114 &31241547
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -200,6 +196,397 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NewMonoBehaviourScript
   soulType: 0
+--- !u!1 &49885545
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 49885546}
+  - component: {fileID: 49885547}
+  m_Layer: 0
+  m_Name: E8
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &49885546
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 49885545}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 417034592}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &49885547
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 49885545}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a1171847eb875841a989d214a1e802a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialougeTrigger
+  dialouge:
+    names:
+    - ...
+    - ...
+    - ...
+    - Soul #2
+    - ...
+    - ...
+    - Middle Man
+    - ...
+    - Soul #2
+    - ...
+    - Soul #2
+    - Soul #2
+    - ...
+    - Soul #2
+    - Soul #2
+    - ...
+    - Soul #2
+    - ...
+    sentences:
+    - 'Then arrives your second defendant, seemingly smaller than the first one you
+      notice. '
+    - This must be a child. Robbed of their life just as it began.
+    - "As they step into the podium, they look around\u2013curious as many children
+      often are. Then, looks straight into your eyes."
+    - Hi!
+    - 'They chirp, catching you off guard. You expect not to be greeted in such a
+      friendly manner, let alone so casually. Perhaps the inherent innocence of youth
+      has yet to be stripped down from their identity. How fortunate of them to die
+      kind. '
+    - 'You nod your head in acknowledgement and offer no proper response, instead
+      you echo the words you have first spoken to the defendant before this one. '
+    - Speak your truth and why you are here, soul of the once living. Tell me your
+      faults and reasons, for your conviction may change the line of your fate.
+    - The child, seemingly unbothered by your dismissal of greeting, looks deep in
+      thought as they fumble with their fingers.
+    - "Hm. I think I died because I was hungry\u2026"
+    - 'They mumbled, scratching the back of their nape as they continue. '
+    - "I guess always feeding my little sister first got to me! But mama did say
+      to always treat her first, so I don\u2019t mind."
+    - "Well, I mean, it\u2019s also my fault I don\u2019t take enough food really.
+      But I just feel bad, ya know? "
+    - They sigh, their posture slumped as the weight of their crime slowly weighs
+      on their realization.
+    - "I guess that\u2019s why I\u2019m here, huh? I just\u2013we didn\u2019t have
+      money and my sister needed to eat. I thought I\u2019d be fine not eating myself,
+      but my sister\u2026"
+    - I wanted to ease a bit of her suffering, even just a little. Even if it meant
+      stealing.
+    - The child makes a small sound akin to a whimper, damped by their own mouth.
+      Their voice then wavers as they mumble their last piece.
+    - "I\u2019m sorry. I know it\u2019s bad, mama does too. But we needed to live
+      somehow\u2026it was the best chance we got."
+    - And the child ends at that, silence returning to the halls with their face
+      down. Their once curious eyes now downcast, guilt gnawing at their form and
+      therefore refusing to meet your eyes just as bravely as they did before.
+--- !u!1 &148539154
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 148539155}
+  - component: {fileID: 148539156}
+  m_Layer: 0
+  m_Name: E9
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &148539155
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 148539154}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 417034592}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &148539156
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 148539154}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a1171847eb875841a989d214a1e802a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialougeTrigger
+  dialouge:
+    names:
+    - Middle Man
+    - System
+    sentences:
+    - Very well. Your testimony is accounted for. I must now consult the counsel.
+    - The rest of this part is work in progress, So sorry! :(
+--- !u!1 &189968835
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 189968836}
+  - component: {fileID: 189968838}
+  - component: {fileID: 189968837}
+  m_Layer: 5
+  m_Name: JusticeMask
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &189968836
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 189968835}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1757491628}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -1.8, y: 179.51}
+  m_SizeDelta: {x: 500, y: 500}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &189968837
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 189968835}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 3099474059885606579, guid: 065edbce57ca3e64092536b6b43366b0, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &189968838
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 189968835}
+  m_CullTransparentMesh: 1
+--- !u!1 &214021998
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 214021999}
+  - component: {fileID: 214022001}
+  - component: {fileID: 214022000}
+  m_Layer: 5
+  m_Name: Judgement
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &214021999
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 214021998}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1757491628}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 140}
+  m_SizeDelta: {x: 500, y: 500}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &214022000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 214021998}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 6950174656021418613, guid: 1e79f796d67c31643a7962ef179e8732, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &214022001
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 214021998}
+  m_CullTransparentMesh: 1
+--- !u!1 &248795168
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 248795169}
+  - component: {fileID: 248795170}
+  m_Layer: 0
+  m_Name: E10 (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &248795169
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 248795168}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 417034592}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &248795170
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 248795168}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a1171847eb875841a989d214a1e802a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialougeTrigger
+  dialouge:
+    names:
+    - ...
+    - ...
+    - Soul #5
+    - ...
+    - Middle Man
+    - ...
+    - Soul #5
+    - ...
+    - Middle Man
+    - Soul #5
+    - Soul #5
+    - Soul #5
+    - ...
+    sentences:
+    - "The next defendant arrives with a strong air of pride, standing tall and firm
+      in a way that demands attention without being overbearing\u2013a feat within
+      itself. "
+    - 'As they step foot onto the podium, they flash you a smile. Clearly, being
+      dead is the most unbothersome thing in their mind. '
+    - "Good Mor\u2013! Actually, what time is it here? Nevermind. Good day, Judge!
+      I\u2019m here to announce to you that I am by all accounts guilty of whatever
+      it is you accuse me of doing! "
+    - "\u2026what? "
+    - 'Excuse me? '
+    - The soul grins, your confusion clearly the cause of their amusement. Nevertheless,
+      they continue.
+    - "That\u2019s right! I know why I\u2019m here. You\u2019re about to persecute
+      me right? Well tell you what, go ahead. Just know that I did it for the sake
+      of the people and to expose the truth everyone was owed."
+    - 'Interesting. Someone likes getting ahead of themselves. You clear your throat
+      and fix your gaze at the brazen soul before you. '
+    - Speak your truth and why you are here, soul of the once living. Tell me your
+      faults and reasons, for your conviction may change the line of your fate.
+    - "Change my fate? Sure is interesting, but alright. For starters, I\u2019m a
+      journalist. Rookie one at that, but that didn\u2019t stop me from fighting
+      for everything I knew was right."
+    - "And in doing so, I\u2019ve violated at least three NDA\u2019s, illegally obtained
+      multiple documents that needed clearances I\u2019ll never have, and destroyed
+      the data privacy rights of at least six politicians throughout the entire research
+      process of my paper. "
+    - 'Publishing it was what got me killed, but I have absolutely no regrets. I
+      did what I have to do and I will do it again for the greater good of the public. '
+    - 'Well that sure is a lot. At least, you suppose, they are aware of their consequences. '
 --- !u!1 &334360267
 GameObject:
   m_ObjectHideFlags: 0
@@ -298,6 +685,55 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 334360267}
   m_CullTransparentMesh: 1
+--- !u!1 &403463666
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 403463667}
+  - component: {fileID: 403463668}
+  m_Layer: 0
+  m_Name: E10 (6)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &403463667
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 403463666}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 417034592}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &403463668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 403463666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a1171847eb875841a989d214a1e802a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialougeTrigger
+  dialouge:
+    names:
+    - Case
+    sentences:
+    - Not Found
 --- !u!1 &417034591
 GameObject:
   m_ObjectHideFlags: 0
@@ -334,10 +770,74 @@ Transform:
   - {fileID: 1012040673}
   - {fileID: 880410737}
   - {fileID: 2133513490}
+  - {fileID: 49885546}
+  - {fileID: 148539155}
+  - {fileID: 1787671351}
+  - {fileID: 777600342}
+  - {fileID: 1610923315}
+  - {fileID: 446529631}
+  - {fileID: 248795169}
+  - {fileID: 678219753}
+  - {fileID: 403463667}
+  - {fileID: 1992055865}
+  - {fileID: 1115458626}
+  - {fileID: 1088295387}
+  - {fileID: 1263837533}
   - {fileID: 1210090813}
   - {fileID: 1743000837}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &446529630
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 446529631}
+  - component: {fileID: 446529632}
+  m_Layer: 0
+  m_Name: E10 (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &446529631
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 446529630}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 417034592}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &446529632
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 446529630}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a1171847eb875841a989d214a1e802a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialougeTrigger
+  dialouge:
+    names:
+    - Middle Man
+    - Sys
+    sentences:
+    - Very well. Your testimony is accounted for. I must now consult the counsel.
+    - The rest of this part is work in progress, So sorry! :(
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -509,18 +1009,22 @@ MonoBehaviour:
   - {fileID: 1637057518}
   - {fileID: 2142789824}
   - {fileID: 1921292848}
-  BG: {fileID: 2053572263}
+  bg: {fileID: 2053572263}
   TextBox: {fileID: 770600113}
-  FadeIn: {fileID: 1941871323}
+  fadeIn: {fileID: 1941871323}
   NPCTable: {fileID: 1690448172}
   MMPodium: {fileID: 1824063862}
   NPC: {fileID: 1376152662}
-  StatueBG: {fileID: 1619949081}
+  statueBG: {fileID: 1619949081}
+  blackBG: {fileID: 1827693247}
   middleMan: {fileID: 1087646449}
   MMJustice: {fileID: 334360267}
   MMJudgement: {fileID: 1692856805}
-  MaskButtons: {fileID: 944596219}
-  DestinationButtons: {fileID: 959166241}
+  JusticeMask: {fileID: 189968835}
+  JudgementMask: {fileID: 214021998}
+  maskButtons: {fileID: 944596219}
+  destinationButtons: {fileID: 959166241}
+  endBG: {fileID: 0}
   mainTextObject: {fileID: 1039399068}
   heavenWarningBG: {fileID: 0}
   hellWarningBG: {fileID: 0}
@@ -533,6 +1037,19 @@ MonoBehaviour:
   SelectE5: {fileID: 1012040674}
   SelectE6: {fileID: 880410738}
   SelectE7: {fileID: 2133513491}
+  SelectE8: {fileID: 49885547}
+  SelectE9: {fileID: 148539156}
+  SelectE10: {fileID: 1787671352}
+  SelectE11: {fileID: 777600343}
+  SelectE12: {fileID: 1610923316}
+  SelectE13: {fileID: 446529632}
+  SelectE14: {fileID: 248795170}
+  SelectE15: {fileID: 678219754}
+  SelectE16: {fileID: 403463668}
+  SelectE17: {fileID: 1992055866}
+  SelectE18: {fileID: 1115458627}
+  SelectE19: {fileID: 1088295388}
+  SelectE20: {fileID: 1263837534}
   soulTypes: 00000000000000000000000000000000000000000000000000000000
   dialougeManager: {fileID: 622641293}
   moralityManager: {fileID: 911905432}
@@ -683,6 +1200,57 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &678219752
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 678219753}
+  - component: {fileID: 678219754}
+  m_Layer: 0
+  m_Name: E10 (5)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &678219753
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 678219752}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 417034592}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &678219754
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 678219752}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a1171847eb875841a989d214a1e802a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialougeTrigger
+  dialouge:
+    names:
+    - Middle Man
+    - Sys
+    sentences:
+    - Very well. Your testimony is accounted for. I must now consult the counsel.
+    - The rest of this part is work in progress, So sorry! :(
 --- !u!1 &758260176
 GameObject:
   m_ObjectHideFlags: 0
@@ -952,6 +1520,57 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 770600113}
   m_CullTransparentMesh: 1
+--- !u!1 &777600341
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 777600342}
+  - component: {fileID: 777600343}
+  m_Layer: 0
+  m_Name: E10 (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &777600342
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 777600341}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 417034592}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &777600343
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 777600341}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a1171847eb875841a989d214a1e802a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialougeTrigger
+  dialouge:
+    names:
+    - Middle Man
+    - System
+    sentences:
+    - Very well. Your testimony is accounted for. I must now consult the counsel.
+    - The rest of this part is work in progress, So sorry! :(
 --- !u!1 &815413651
 GameObject:
   m_ObjectHideFlags: 0
@@ -1144,7 +1763,6 @@ GameObject:
   m_Component:
   - component: {fileID: 880410737}
   - component: {fileID: 880410738}
-  - component: {fileID: 880410739}
   m_Layer: 0
   m_Name: E6
   m_TagString: Untagged
@@ -1181,22 +1799,45 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialougeTrigger
   dialouge:
     names:
-    - Elemental 6
+    - ...
+    - ...
+    - Soul #1
+    - ...
+    - Middle Man
+    - ...
+    - Soul #1
+    - Soul #1
+    - Soul #1
+    - Soul #1
+    - ...
+    - ...
+    - ...
     sentences:
-    - Buh
---- !u!114 &880410739
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 880410736}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 192b6e103ae82884a840d88839c45db2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SoulData
-  soulType: 0
+    - 'Thus arrives your first defendant, short in their steps as they climb into
+      the podium, nervousness radiating from their form. '
+    - "You raise your hand to signal them to speak, but at the instance your arm
+      moves\u2013they squeak. Unknown to how to treat the fearful, you nod your head
+      as a sign for the soul instead. "
+    - "Uhm, well\u2026"
+    - They stammer, still unsure how to proceed. You urge them, voice dull and lacking
+      in concern.
+    - 'Speak your truth and why you are here, soul of the once living. Tell me your
+      faults and reasons, for your conviction may change the line of your fate. '
+    - 'They flinch at the sound of your voice reverbing around the halls, clearly
+      uncomfortable by the lonely space you two occupy. To your benefit, they begin
+      to speak their testimony. '
+    - "Well, I\u2019ll be honest s-sir\u2013ma\u2019am? I\u2019ve been an honest-to-god
+      good person all my life. The only thing that I could think of that I ever did
+      wrong was\u2026 well\u2026 "
+    - "Speed a red light\u2026 "
+    - "I swear it was an accident! The lights just suddenly changed before I could
+      process the colors change and\u2026!  I paid my fine a-and no one got hurt!  "
+    - "Just my pride and my wallet, is all\u2026 "
+    - Hm. Interesting.
+    - From what you know, the souls of the dead vow to speak the truth and nothing
+      but the truth before stepping out of the coffin. This is a binding pact to
+      the divine world that prevents them from committing any form of deception.
+    - As such, minor as the issue is, the soul must be telling the truth.
 --- !u!1 &911905431
 GameObject:
   m_ObjectHideFlags: 0
@@ -1454,7 +2095,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1012040673}
   - component: {fileID: 1012040674}
-  - component: {fileID: 1012040675}
   m_Layer: 0
   m_Name: E5
   m_TagString: Untagged
@@ -1491,22 +2131,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialougeTrigger
   dialouge:
     names:
-    - EEEEE
+    - ...
+    - ...
+    - ...
+    - ...
     sentences:
-    - Awesomes#5
---- !u!114 &1012040675
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1012040672}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 192b6e103ae82884a840d88839c45db2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SoulData
-  soulType: 0
+    - 'Soon, a soul from the once living will join you. From that coffin, they will
+      stand before you behind the podium. You are to listen to their grievances and
+      learn of their story, reasons, and decisions, in order to cast your verdict. '
+    - "Justice and Judgement will speak their mind to you which will aid your considerations
+      for the soul\u2019s final verdict. You get to choose who\u2019s opinion you
+      believe is best and send the soul off to their destination in the divine realm."
+    - Remember to listen closely. All words are exchanged only once and all mistakes
+      are never in your favor.
+    - 'It would be a shame to see you gone so soon, newly appointed. '
 --- !u!1 &1035828869
 GameObject:
   m_ObjectHideFlags: 0
@@ -1657,7 +2295,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!222 &1039399070
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1837,6 +2475,106 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1087646449}
   m_CullTransparentMesh: 1
+--- !u!1 &1088295386
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1088295387}
+  - component: {fileID: 1088295388}
+  m_Layer: 0
+  m_Name: E10 (9)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1088295387
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1088295386}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 417034592}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1088295388
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1088295386}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a1171847eb875841a989d214a1e802a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialougeTrigger
+  dialouge:
+    names:
+    - Middle Man
+    - Sys
+    sentences:
+    - Very well. Your testimony is accounted for. I must now consult the counsel.
+    - The rest of this part is work in progress, So sorry! :(
+--- !u!1 &1115458625
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1115458626}
+  - component: {fileID: 1115458627}
+  m_Layer: 0
+  m_Name: E10 (8)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1115458626
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1115458625}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 417034592}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1115458627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1115458625}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a1171847eb875841a989d214a1e802a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialougeTrigger
+  dialouge:
+    names:
+    - Case
+    sentences:
+    - Not found
 --- !u!1 &1210090812
 GameObject:
   m_ObjectHideFlags: 0
@@ -1886,6 +2624,150 @@ MonoBehaviour:
     - Triple T
     sentences:
     - Tung Tung Tung SAHUR
+--- !u!1 &1263837532
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1263837533}
+  - component: {fileID: 1263837534}
+  m_Layer: 0
+  m_Name: E10 (10)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1263837533
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1263837532}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 417034592}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1263837534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1263837532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a1171847eb875841a989d214a1e802a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialougeTrigger
+  dialouge:
+    names:
+    - ...
+    - ...
+    - ...
+    - ...
+    - ...
+    - ...
+    - ...
+    - ...
+    - ...
+    - ...
+    - ...
+    - ...
+    - ...
+    - ...
+    - ...
+    - ...
+    - ...
+    - ...
+    - ...
+    - ...
+    - ...
+    - ...
+    - ...
+    - ...
+    - ...
+    - ...
+    - ...
+    - ...
+    - ...
+    - ...
+    - ...
+    - ...
+    - ...
+    - ...
+    - ...
+    sentences:
+    - The number of defendants has been unending since you began your life as the
+      Middle Man.
+    - "Quite frankly, it is the sole reason why you exist\u2013one thing you have
+      long acknowledged since being put on the pedestal as the perfect and impartial
+      Virtue of Court. "
+    - Each soul arrives with a story as ridiculous as the last. You have since learned
+      that humanity is as unserious as it is unpredictable, oftentimes. It is in
+      this way that humanity finds a way to surprise you.
+    - "Apart from your amusement towards humanity\u2019s haphazardness, these days,
+      you don\u2019t know where you began and where you will end."
+    - Was there a you before this? What will come of you once you perish?
+    - "To be the Middle Man is your purpose. Humanity\u2019s Hearken, Virtue, and
+      Unforgiving One. The one who follows the opinions of the Gods on your shoulders
+      and executes humanity\u2019s verdict perfectly."
+    - At least, as perfect as things seem. After all, neither Heaven nor Hell have
+      descended to express their disappointment at you.
+    - Yet.
+    - "You follow their rules, rely on the Divine\u2019s preferences, and obediently
+      devote yourself to the Divine Masks on your shoulders. Yet, despite everything,
+      your future is as uncertain as the souls that stand before you."
+    - Inside you is a small, lingering feeling of distress.
+    - Doubt seeps in the longer you play your perfect role as judge, jury, and executioner.
+    - "You\u2019ve never quite figured out exactly what makes you perfect. It\u2019s
+      not something that was spoken, only that perfection means you will not be disgraced."
+    - So how long will you be perfect?
+    - 'How long will it be until the foundation cracks? '
+    - "When will be the first time you\u2019ll make your lasting mistake? "
+    - 'At what point, in your borrowed existence, will it be your last? '
+    - "If the masks on our shoulders felt your creeping doubt, they speak none of
+      it. Much to your chagrin. You\u2019ve relied on every single word they have
+      uttered, why is it now that they speak none for your worries?"
+    - 'Is it simply because you have done nothing to gravely account for? Even if
+      you did, would they notice? '
+    - 'Are you the exception to their opinions? Is your final verdict simply to be
+      the Middle Man and die as one? '
+    - 'Are you that worthless to remain unnoticed by the sole companions you entrust
+      your life with?
+
+'
+    - "Before you could spiral deeper, the sound of the coffin door opening snaps
+      you out of your thoughts. \r\n"
+    - Another defendant has arrived.
+    - 'Your face, ever-so stoic, cold, and detached remains unchanged as the next
+      nervous soul approaches the podium. '
+    - At the raise of your hand, you signal the defendant to speak. They flinch at
+      the sight of your movement before speaking their testimony, reminding you of
+      the long before.
+    - 'This was just like your first. How many souls has it been since then, you
+      wonder. '
+    - Such is another day, another case, and another fate for the Middle Man.
+    - As you listen to the testimony of the soul before you, a soft rustle of wind
+      catches your ears.
+    - A whisper of the wind so soft it easily could have been a delusion. But your
+      ears pick up a voice so familiar, so similar to the one that spoke to you from
+      the time you first arrived in Sheol with knowing nothing.
+    - For a moment, you wonder. Who are they? What are they to Sheol?
+    - 'Is there a resident you know not about? '
+    - Do the masks know of their existence?
+    - 'Curious, you ignore your thoughts for the nth time and tune into the sound
+      of the wind. '
+    - "Finally, you hear its delicate warning. \r\n"
+    - May your obedience never betray you, longest-serving member of the jury.
 --- !u!1 &1376152662
 GameObject:
   m_ObjectHideFlags: 0
@@ -1984,6 +2866,96 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!1 &1610923314
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1610923315}
+  - component: {fileID: 1610923316}
+  m_Layer: 0
+  m_Name: E10 (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1610923315
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1610923314}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 417034592}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1610923316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1610923314}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a1171847eb875841a989d214a1e802a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialougeTrigger
+  dialouge:
+    names:
+    - ...
+    - ...
+    - ...
+    - Middle Man
+    - ...
+    - Middle Man
+    - ...
+    - Soul #4
+    - Soul #4
+    - ...
+    - Middle Man
+    - Soul #4
+    - ...
+    sentences:
+    - 'Your fourth defendant arrives on edge. Despite their hooded form, you can
+      feel the piercing sternness of their gaze as they step forth on the podium.
+
+'
+    - 'They stand tall with an unnerving stillness to it. Unlike the previous defendant,
+      this one stands with an air of authority, as though you are the powerless between
+      the two of you. '
+    - Although absurd, you decide to pay no heed to their attitude.
+    - "Speak your truth and why you are here, soul of the once living. Tell me your
+      faults and reasons, for your conviction may change the line of your fate. \r\n"
+    - 'The soul remains silent, as if questioning your right to demand a statement.
+      At this, you raise an eyebrow. '
+    - 'Well? '
+    - 'They huff in response. If this is their way of being difficult, they would
+      be mistaken to believe that this will get a rise out of you. '
+    - 'I lived a simple life. Married with children of whom I took proper care of.
+      I gave them a roof over their heads, food on the table, clothes on their backs,
+      and proper education. '
+    - " I\u2019ve done what any parent would for their child. I have nothing to repent
+      for, nor do I regret anything. Even if my ungrateful children never did anything
+      to repay the favor. "
+    - Unsatisfied with their testimony, you pry further.
+    - 'Nothing? If you did everything to care for them, why would your children evade
+      you? '
+    - "\u2026I cared for their basic necessities. Anything else would have been pointless.
+      I spent my life, money, and hard work to raise them and all I get is their
+      thankless attitude. They deserve much less."
+    - 'With the venom on their tongue, they sneer at you as if you were one of their
+      children. With a soul fueled with so much anger, you decide against pressing
+      more questions. '
 --- !u!1 &1619949081
 GameObject:
   m_ObjectHideFlags: 0
@@ -2092,7 +3064,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1637057519}
   - component: {fileID: 1637057520}
-  - component: {fileID: 1637057521}
   m_Layer: 0
   m_Name: E2
   m_TagString: Untagged
@@ -2129,24 +3100,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialougeTrigger
   dialouge:
     names:
-    - ???
-    - Middle Man
+    - ...
+    - ...
+    - ...
+    - ...
+    - ...
     sentences:
-    - thank you, thank you, thank you
-    - sendthistosomeonewhosthegoat
---- !u!114 &1637057521
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1637057518}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 192b6e103ae82884a840d88839c45db2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SoulData
-  soulType: 1
+    - "You are the Jury, Judge and Executioner. The Hearken, the Virtue, the Unforgiving\u2014to
+      humanity you are different names, but to the primordial divine, you are the
+      Middle Man."
+    - In the courtroom of Sheol, you have one task. To send souls to where they belong
+      in the divine realm.
+    - You will examine the souls of the once living, humans built upon sins and transgressions
+      with characters formed from what they believed was right. You decide whether
+      they are to suffer for their sins in the raging fire or simmer in the forgiveness
+      of the holy water.
+    - On your shoulders are the only permanent residences of Sheol. The Weeping Mask
+      of Justice sits on your right, whose tears you believe have dampened your right
+      shoulder. The Cackling Mask of Judgement sits on your left, vibrating softly
+      on your left shoulder from its snickering.
+    - The masks are merely pieces of the entities they bear the name of. Pieces of
+      which you can only hear from. Their words are absolute and should be considered
+      as sacred. For you are their hollow servant, speaking on behalf of their will.
 --- !u!1 &1652292896
 GameObject:
   m_ObjectHideFlags: 0
@@ -2701,6 +3676,9 @@ RectTransform:
   - {fileID: 1824063863}
   - {fileID: 944596220}
   - {fileID: 959166242}
+  - {fileID: 189968836}
+  - {fileID: 214021999}
+  - {fileID: 1969909100}
   - {fileID: 1039399071}
   - {fileID: 1941871324}
   m_Father: {fileID: 0}
@@ -2710,6 +3688,93 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &1787671350
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1787671351}
+  - component: {fileID: 1787671352}
+  m_Layer: 0
+  m_Name: E10
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1787671351
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1787671350}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 417034592}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1787671352
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1787671350}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a1171847eb875841a989d214a1e802a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialougeTrigger
+  dialouge:
+    names:
+    - ...
+    - ...
+    - ...
+    - Middle Man
+    - ...
+    - Soul #3
+    - ...
+    - Soul #3
+    - Soul #3
+    - Soul #3
+    - Soul #3
+    - ...
+    sentences:
+    - Then arrives your third defendant with a posture as rigid as a statue. With
+      a straight form and their head high, the next soul steps into the podium with
+      practiced ease.
+    - It seems this one is disciplined enough to hide much of their discomfort.
+    - "They stand silently still, seemingly unwilling to speak before you\u2013perhaps
+      a small telltale of nervousness. As such, you say your line as a greeting. "
+    - Speak your truth and why you are here, soul of the once living. Tell me your
+      faults and reasons, for your conviction may change the line of your fate.
+    - The soul nods before clearing their throat. With a voice clear and soft, they
+      respond.
+    - "I dedicated my life for my duty as a private nurse for a very\u2026 important
+      individual. "
+    - "Suddenly hesitant to continue, they pause for a moment before gaining their
+      resolve\u2013as if pushing down their feelings for the truth of the matter."
+    - A politician. I served a politician of my country that was far from a good
+      man. By all means, it is my regret that I treated such a vile man of cruel
+      repertoire.
+    - "To have sustained a life that harmed many and killed plenty\u2026I regret
+      most of my life because of my duty. A duty that required me to practice compassion
+      and respect for the inherent dignity of every person, even criminals."
+    - Which means, regardless of my ethical values, a nurse's primary commitment
+      is the patient. Especially a patient so powerful, protected, and promises a
+      hefty paycheck.
+    - "By all means, I know I have done nothing wrong. But\u2026 it also meant that
+      I helped keep that putrid man alive and I\u2026\r\n"
+    - Defeated, the soul resorts to silence. This must be a matter that has long
+      since weighed their conscience.  It seems that this is all they are willing
+      to speak about the matter.
 --- !u!1 &1802534466
 GameObject:
   m_ObjectHideFlags: 0
@@ -2751,9 +3816,9 @@ AudioSource:
   m_GameObject: {fileID: 1802534466}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -8219941399457769389, guid: fe5abc765090cc041ad5a700cdb5d6e3, type: 2}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: ebb1c4c7a97913d46ba0c582c1e4a08e, type: 3}
+  m_Resource: {fileID: 8300000, guid: 311907af502c28f41bbbb8414dde99ce, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.374
   m_Pitch: 1
@@ -2945,7 +4010,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1.8, y: -3.9}
+  m_AnchoredPosition: {x: -0.00074905, y: 0.000012159}
   m_SizeDelta: {x: 1920, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1827693249
@@ -3072,7 +4137,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1921292847}
   - component: {fileID: 1921292848}
-  - component: {fileID: 1921292849}
   m_Layer: 0
   m_Name: E4
   m_TagString: Untagged
@@ -3109,22 +4173,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialougeTrigger
   dialouge:
     names:
-    - LeBron
+    - ...
+    - ...
     sentences:
-    - Thas why he's the goat
---- !u!114 &1921292849
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1921292846}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 192b6e103ae82884a840d88839c45db2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SoulData
-  soulType: 0
+    - The cackling mask is of the God of Judgement, who laughs at the face of baseless
+      accusations and adds on it. Judgement practices the art of careful accusation,
+      the one who draws conclusions based on the situation and mocks the existence
+      of one-sided opinions. Often, this God is believed to be ruthless and unforgiving
+      for their opinion.
+    - "Relentless and stubborn, Judgement\u2019s verdict is what Hell believes is
+      absolute. Many believe that it is their mockery that flames the eternal raging
+      fire of hell, bringing life to the anger of human kind drawn from their audacious
+      accusations towards them."
 --- !u!1 &1941871323
 GameObject:
   m_ObjectHideFlags: 0
@@ -3220,6 +4280,132 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1941871323}
   m_CullTransparentMesh: 1
+--- !u!1 &1969909099
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1969909100}
+  - component: {fileID: 1969909102}
+  - component: {fileID: 1969909101}
+  m_Layer: 5
+  m_Name: MMEnd
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1969909100
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1969909099}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1757491628}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -21.185, y: -12.1}
+  m_SizeDelta: {x: 1083.3767, y: 1059.6}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1969909101
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1969909099}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: -2465726628141748020, guid: 23e1475546d5c2b479b4466f27be1203, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 1
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1969909102
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1969909099}
+  m_CullTransparentMesh: 1
+--- !u!1 &1992055864
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1992055865}
+  - component: {fileID: 1992055866}
+  m_Layer: 0
+  m_Name: E10 (7)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1992055865
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1992055864}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 417034592}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1992055866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1992055864}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a1171847eb875841a989d214a1e802a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialougeTrigger
+  dialouge:
+    names:
+    - Middle Man
+    - Sys
+    sentences:
+    - Very well. Your testimony is accounted for. I must now consult the counsel.
+    - The rest of this part is work in progress, So sorry! :(
 --- !u!1 &2053572263
 GameObject:
   m_ObjectHideFlags: 0
@@ -3302,7 +4488,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2133513490}
   - component: {fileID: 2133513491}
-  - component: {fileID: 2133513492}
   m_Layer: 0
   m_Name: E7
   m_TagString: Untagged
@@ -3339,22 +4524,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialougeTrigger
   dialouge:
     names:
-    - Epic Seven
+    - Middle Man
+    - System
     sentences:
-    - This Truly Was A Divine's Final Verdict
---- !u!114 &2133513492
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2133513489}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 192b6e103ae82884a840d88839c45db2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SoulData
-  soulType: 0
+    - Very well. Your testimony is accounted for. I must now consult the counsel.
+    - The rest of this part is work in progress, So sorry! :(
 --- !u!1 &2142789824
 GameObject:
   m_ObjectHideFlags: 0
@@ -3365,7 +4539,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2142789825}
   - component: {fileID: 2142789826}
-  - component: {fileID: 2142789827}
   m_Layer: 0
   m_Name: E3
   m_TagString: Untagged
@@ -3402,24 +4575,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialougeTrigger
   dialouge:
     names:
-    - Middle Man
-    - Middle Man
+    - ...
+    - ...
     sentences:
-    - I'm HIM
-    - John Middle Man Divine's Final Verdict himself!
---- !u!114 &2142789827
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2142789824}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 192b6e103ae82884a840d88839c45db2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SoulData
-  soulType: 0
+    - The weeping mask is of the God of Justice, who speaks only for law and lives
+      only by law. Justice believes that all is right and fair only when beneath
+      the structure of law, forever mourning those unable or unwilling to follow
+      as those only end in persecution. Often, this God is believed to be inconsiderate
+      and selfish for their opinion.
+    - "Unshakable and determined, Justice\u2019s verdict is what Heaven believes
+      is absolute. Many believe that their sorrow was the catalyst for the creation
+      of the holy water, with their tears considered as the purest form."
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
