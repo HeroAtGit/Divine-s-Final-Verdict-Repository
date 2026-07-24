@@ -114,12 +114,12 @@ public class MoralityManager : MonoBehaviour
         {
             currentEnding = GameEnding.DeathHell;
         }
-        // Ideal Endings
+        // Ideal Ending
         else if ((warningHeaven && heavenBar > 20) || (warningHell && hellBar > 20))
         {
             currentEnding = GameEnding.IdealEnd;
         }
-        // Perfect Endings
+        // Perfect Ending
         else if (heavenBar > 25 || hellBar > 25)
         {
             currentEnding = GameEnding.PerfectEnd;
