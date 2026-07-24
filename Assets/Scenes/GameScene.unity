@@ -731,9 +731,53 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialougeTrigger
   dialouge:
     names:
-    - Case
+    - ...
+    - ...
+    - ...
+    - Soul #6
+    - ...
+    - Middle Man
+    - Soul #6
+    - Soul #6
+    - Middle Man
+    - Soul #6
+    - ...
+    - Middle Man
+    - Soul #6
+    - Middle Man
+    - Soul #6
+    - ...
     sentences:
-    - Not Found
+    - The next defendant to arrive comes with an air of humbleness, curiosity at
+      the edges of their eyes that glints with surprise as they take in the surroundings
+      of the courtroom.
+    - In a way, they remind you of the child that was once in their place.
+    - Arriving at their place on the podium, they hesitate before shooting you a
+      small grin in greeting.
+    - 'Hello there. '
+    - "They greet in kind, this time you nod in return. You\u2019ve since learned
+      that this is how humans normally begin conversations and that it is only respectful
+      to show response. "
+    - Speak your truth and why you are here, soul of the once living. Tell me your
+      faults and reasons, for your conviction may change the line of your fate.
+    - "Ah, well. I lived a simple life really. I was just a poor man\u2019s child,
+      trying to make a living selling hotdogs by the street. It's hard work but it
+      is honest."
+    - "Though uh, I guess I didn\u2019t do it ethically\u2026 like most farmers do."
+    - Ethically?
+    - Yes. Like how farmers have dedicated farms for chickens and cattle alike, I
+      had to source mine from the streets since they were practically littered with
+      stray dogs.
+    - "Hold on now. Stray dogs? Dogs? Do they mean\u2013"
+    - Please, enlighten me. What do you think hotdogs are made of?
+    - "Hm? Well, is it not hotdogs? It\u2019s in the name isn\u2019t it? Like how
+      fried chicken is made of chickens, and steaks are from cows. Are they not all
+      poultry animals?"
+    - " \u2026No. I\u2019m afraid not."
+    - "O-oh\u2026"
+    - "Silence prevails. This is quite absurd. Though clearly, this was a result
+      of a lapse in knowledge, cooking dogs is\u2026 hm. You suppose others would
+      say the same about chicken, cows, and cattle alike. Fair enough."
 --- !u!1 &417034591
 GameObject:
   m_ObjectHideFlags: 0
@@ -1024,7 +1068,7 @@ MonoBehaviour:
   JudgementMask: {fileID: 214021998}
   maskButtons: {fileID: 944596219}
   destinationButtons: {fileID: 959166241}
-  endBG: {fileID: 0}
+  endBG: {fileID: 1969909099}
   mainTextObject: {fileID: 1039399068}
   heavenWarningBG: {fileID: 0}
   hellWarningBG: {fileID: 0}
@@ -2572,9 +2616,48 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialougeTrigger
   dialouge:
     names:
-    - Case
+    - ...
+    - ...
+    - ...
+    - Soul #7
+    - ...
+    - ...
+    - Middle Man
+    - ...
+    - Soul #7
+    - ...
+    - Soul #7
+    - Soul #7
+    - ...
+    - ...
     sentences:
-    - Not found
+    - 'The next defendant that enters is jittery, fearful of every heavy step they
+      take as they make their slow ascent towards the podium. '
+    - "As you shaft your gaze to them, they flinch. Obviously guilt-ridden, the soul\u2019s
+      body does not shake in panic\u2013no, they shake in anger."
+    - Before you could speak, they utter one wavering sentence.
+    - "It wasn\u2019t my fault\u2026"
+    - "This doesn\u2019t surprise you, after all death is a frightening subject to
+      most people. It just so happens that your previous defendants have yet to really
+      react to the knowledge that they are dead."
+    - Perhaps they have had time to process it, while this soul has yet to do.
+    - Speak your truth and why you are here, soul of the once living. Tell me your
+      faults and reasons, for your conviction may change the line of your fate.
+    - At your voice, they draw a shaky breath. Then suddenly, as if a dam had fallen
+      apart, they scream.
+    - "It wasn\u2019t my fault! It really wasn\u2019t! I did my job! I flew that
+      plane\u2013I checked everything if it was right! But the tower\u2013"
+    - The hiss, venom dripping from the last word they growled, almost as if ready
+      to crawl back to the living and destroy the tower they so mentioned with their
+      bare hands.
+    - 'Tower control told me the wrong coordinates! They told me to steer clear into
+      the wrong direction and caused us to crash! I DID NOT KILL THOSE PEOPLE! THE
+      TOWER CONTROL DID! '
+    - I WAS A GOOD PILOT GODDAMN IT!
+    - 'At a fit of rage, the soul starts heaving as droplets of tears fall onto the
+      podium top. This is your first ever witness to a crying being that wasn''t
+      the Weeping Mask of Justice. '
+    - Somehow, that knowledge makes it worse.
 --- !u!1 &1210090812
 GameObject:
   m_ObjectHideFlags: 0

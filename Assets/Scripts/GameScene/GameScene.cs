@@ -259,7 +259,7 @@ public class GameScene : MonoBehaviour
     }
     #endregion
 
-    #region events
+    #region Main events
     public IEnumerator E01()
     {
         yield return null;
@@ -742,8 +742,10 @@ public class GameScene : MonoBehaviour
     public IEnumerator E20()
     {
         yield return null;
+        MMPodium.SetActive(false);
         middleMan.SetActive(false);
         maskButtons.SetActive(false);
+        endBG.SetActive(true);
 
         yield return new WaitForSeconds(0.5f);
         mainTextObject.SetActive(true);
